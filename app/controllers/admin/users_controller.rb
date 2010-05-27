@@ -7,7 +7,7 @@ class Admin::UsersController < Admin::BaseController
 
 
   index.response do |wants|
-    wants.html { render :text => I18n.locale.to_s }
+    wants.html { render :action => :index }
     wants.json { render :json => @collection.to_json(:include => {:bill_address => {:include => [:state, :country]}, :ship_address => {:include => [:state, :country]}}) }
   end
 
