@@ -62,11 +62,11 @@ class Spree::BaseController < ActionController::Base
   def default_title
     Spree::Config[:site_name]
   end
-  
+
   def accurate_title
     return nil
   end
-  
+
   def reject_unknown_object
     # workaround to catch problems with loading errors for permalink ids (reconsider RC permalink hack elsewhere?)
     begin
@@ -185,7 +185,7 @@ class Spree::BaseController < ActionController::Base
   end
 
   def set_user_language
-    locale = session[:locale] || Spree::Config[:default_locale] || I18n.default_locale
+    locale = I18n.default_locale || Spree::Config[:default_locale] || session[:locale]
     locale = AVAILABLE_LOCALES.keys.include?(locale) ? locale : I18n.default_locale
     I18n.locale = locale
   end

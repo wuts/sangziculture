@@ -5,8 +5,9 @@ class Admin::UsersController < Admin::BaseController
   create.after :save_user_roles
   update.before :save_user_roles
 
+
   index.response do |wants|
-    wants.html { render :action => :index }
+    wants.html { render :text => I18n.locale.to_s }
     wants.json { render :json => @collection.to_json(:include => {:bill_address => {:include => [:state, :country]}, :ship_address => {:include => [:state, :country]}}) }
   end
 
