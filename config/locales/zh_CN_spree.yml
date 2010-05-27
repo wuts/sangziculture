@@ -1,0 +1,933 @@
+---
+zh_CN:
+  'no': "否"
+  'yes': "是"
+  5_biggest_spenders: "5 Biggest Spenders"
+  a_copy_of_all_mail_will_be_sent_to_the_following_addresses: A copy of all mail be sent to the following addresses
+  abbreviation: Abbreviation
+  access_denied: "Access Denied"
+  account: 帐户
+  account_updated: "帐户升级完成"
+  action: 动作
+  alt_text: 可选文字
+  actions:
+    cancel: 取消
+    create: 创建
+    destroy: 销毁
+    list: 列表
+    listing: 名单
+    new: 新建
+    update: 更新
+  active: "激活"
+  activerecord:
+    attributes:
+      address:
+        address1: 地址
+        address2: "Address (contd.)"
+        city: 城市
+        country: "国家"
+        first_name: "名字"
+        first_name_begins_with: "First Name Begins With"
+        last_name: "姓"
+        last_name_begins_with: "Last Name Begins With"
+        phone: 电话
+        state: "省份"
+        zipcode: "邮编"
+      checkout:
+        bill_address:
+          address1: "账单地址街道"
+          city: "账单地址城市"
+          firstname: "账单地址名字"
+          lastname: "账单地址姓氏"
+          phone: "账单地址电话"
+          state: "账单地址省份"
+          zipcode: "账单地址邮编"
+        ship_address:
+          address1: "送货地址街道"
+          city: "送货地址城市"
+          firstname: "送货地址名字"
+          lastname: "送货地址姓氏"
+          phone: "送货地址电话"
+          state: "送货地址城市"
+          zipcode: "送货地址邮编"
+      country:
+        iso: ISO
+        iso3: ISO3
+        iso_name: "ISO Name"
+        name: Name
+        numcode: "ISO Code"
+      creditcard:
+        cc_type: Type
+        month: Month
+        number: 数量
+        verification_value: "Verification Value"
+        year: Year
+      inventory_unit:
+        state: State
+      line_item:
+        price: 价格
+        quantity: 数量
+      order:
+        checkout_complete: "结算完成"
+        ip_address: "IP 地址"
+        item_total: "总数量"
+        number: 数量
+        special_instructions: "特殊说明"
+        state: 城市
+        total: 总计
+      product:
+        available_on: "Available On"
+        cost_price: "成本价"
+        description: 描述
+        master_price: "Master Price"
+        name: 名称
+        on_hand: "有货"
+        shipping_category: "运输类别"
+        tax_category: "税别"
+      product_group:
+        name: 名称
+        product_count: "产品数量"
+        product_scopes: "产品范围"
+        products: "产品"
+        url: URL
+      product_scope:
+        arguments: "Arguments"
+        description: "描述"
+      property:
+        name: 名称
+        presentation: Presentation
+      prototype:
+        name: 名称
+      return_authorization:
+        amount: 数量
+      role:
+        name: 名称
+      state:
+        abbr: 缩写
+        name: 名称
+      tax_category:
+        description: Description
+        name: Name
+      tax_rate:
+        amount: Rate
+      taxon:
+        name: 名称
+        permalink: Permalink
+        position: Position
+      taxonomy:
+        name: Name
+      user:
+        email: 邮件地址
+      variant:
+        cost_price: "成本价"
+        depth: 深度
+        height: 高度
+        price: 价格
+        sku: 最小存货单位
+        weight: 重量
+        width: 宽度
+      zone:
+        description: Description
+        name: Name
+    models:
+      address:
+        one: Address
+        other: Addresses
+      cheque_payment:
+        one: Cheque Payment
+        other: Cheque Payments
+      country:
+        one: Country
+        other: Countries
+      creditcard:
+        one: "Credit Card"
+        other: "Credit Cards"
+      creditcard_payment:
+        one: "Credit Card Payment"
+        other: "Credit Card Payments"
+      creditcard_txn:
+        one: "Credit Card Transaction"
+        other: "Credit Card Transactions"
+      inventory_unit:
+        one: "Inventory Unit"
+        other: "Inventory Units"
+      line_item:
+        one: "Line Item"
+        other: "Line Items"
+      order:
+        one: Order/订单
+        other: Orders/多个订单
+      payment:
+        one: Payment
+        other: Payments
+      product:
+        one: Product
+        other: Products
+      product_group:
+        one: "Product group"
+        other: "Product groups"
+      property:
+        one: Property
+        other: Properties
+      prototype:
+        one: Prototype
+        other: Prototypes
+      return_authorization:
+        one: Return Authorization
+        other: Return Authorizations
+      role:
+        one: Roles
+        other: Roles
+      shipment:
+        one: Shipment
+        other: Shipments
+      shipping_category:
+        one: "Shipping Category"
+        other: "Shipping Categories"
+      state:
+        one: State
+        other: States
+      tax_category:
+        one: "Tax Category"
+        other: "Tax Categories"
+      tax_rate:
+        one: "Tax Rate"
+        other: "Tax Rates"
+      taxon:
+        one: Taxon
+        other: Taxons
+      taxonomy:
+        one: Taxonomy
+        other: Taxonomies
+      user:
+        one: User
+        other: Users
+      variant:
+        one: Variant
+        other: Variants
+      zone:
+        one: Zone
+        other: Zones
+  add: 增加
+  add_category: "增加类别"
+  add_country: "增加国别"
+  add_option_type: "增加可选种类"
+  add_option_types: "增加可选种类群"
+  add_option_value: "Add Option Value"
+  add_product: "增加产品"
+  add_product_properties: "增加产品属性"
+  add_scope: "Add a scope"
+  add_state: "Add State"
+  add_to_cart: "放入购物车"
+  add_zone: "Add Zone"
+  additional_item: Additional Item Cost
+  address: Address
+  address_information: "Address Information"
+  adjustment: Adjustment
+  adjustments: Adjustments
+  administration: Administration
+  all: "全部"
+  all_departments: All departments
+  allow_backorders: "允许缺货"
+  allow_ssl_to_be_used_when_in_developement_and_test_modes: Allow SSL to be used when in development and test modes
+  allow_ssl_to_be_used_when_in_production_mode: Allow SSL to be used in production mode
+  allowed_ssl_in_production_mode: "SSL will {{not}} be used in production"
+  already_registered: 注册用户？
+  alternative_phone: 可选电话
+  amount: 数量
+  analytics_trackers: Analytics Trackers
+  are_you_sure: "确认？"
+  are_you_sure_category: "确认删除类别？"
+  are_you_sure_delete: "确认删除记录？"
+  are_you_sure_delete_image: "确认删除图片？"
+  are_you_sure_option_type: "确认删除可选类别？"
+  are_you_sure_you_want_to_capture: "Are you sure you want to capture?"
+  assign_taxon: "Assign Taxon"
+  assign_taxons: "Assign Taxons"
+  authorization_failure: "认证失败"
+  authorized: 认证的
+  available_on: "可用"
+  available_taxons: "Available Taxons"
+  awaiting_return: Awaiting Return
+  back: 返回
+  back_end: Back End
+  back_to_store: "返回商店"
+  backordered: Backordered/缺货
+  backordering_is_allowed: " 缺货{{不}}允许"
+  balance_due: "欠款"
+  best_selling_products: "热销品"
+  best_selling_taxons: "热销类"
+  both: Both/都
+  bill_address: "账单地址"
+  billing: 账单
+  billing_address: "帐户地址"
+  by_day: "日期"
+  calculator: 计算
+  calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
+  cancel: 取消
+  canceled: 取消的
+  cannot_create_returns: Cannot create returns as this order has not shipped yet.
+  capture: 捕捉
+  card_code: "Card Code"
+  card_details: "Card details"
+  card_number: "Card Number"
+  card_type_is: Card type is
+  cart: 购物车
+  categories: 类别
+  category: Category
+  change: 切换
+  change_language: "切换语言"
+  change_my_password: "修改密码"
+  charge_total: 总计
+  charged: Charged
+  charges: Charges
+  checkout: 结账
+  checkout_steps:
+    # keys correspond to Checkout state names:
+    address: 地址
+    complete: 完成
+    confirm: 确认
+    delivery: 发货
+    payment: 付款
+  cheque: 支票
+  city: 城市
+  clone: 复制
+  code: 代码
+  combine: 结合
+  complete: 完成
+  complete_list: "完整列表"
+  configuration: 设置
+  configuration_options: "选项"
+  configurations: 设置
+  configured: 设置
+  confirm: 确定
+  confirm_delete: "确定删除"
+  confirm_password: "密码确认"
+  continue: 继续
+  continue_shopping: "继续购物"
+  copy_all_mails_to: Copy All Mails To
+  cost_price: "成本价"
+  count: 数量
+  count_of_reduced_by: "count of '{{name}}' reduced by {{count}}"
+  country: Country
+  country_based: "Country Based"
+  coupon: 优惠券
+  coupon_code: 优惠券号码
+  coupons: Coupons
+  coupons_description: Manage coupons
+  create: 创建
+  create_a_new_account: "Create a new account"
+  create_user_account: Create User Account
+  created_successfully: "Created Successfully"
+  credit: 信用
+  credit_card: "信用卡"
+  credit_card_capture_complete: "Credit Card Was Captured"
+  credit_card_payment: "Credit Card Payment"
+  credit_owed: "Credit Owed"
+  credit_total: Credit Total
+  creditcard: Creditcard
+  creditcards: Creditcards
+  credits: Credits
+  current: Current
+  customer: 客户
+  customer_details: "Customer Details"
+  customer_search: "Customer Search"
+  date_created: Date created
+  date_range: "Date Range"
+  debit: Debit
+  delete: Delete
+  depth: Depth
+  description: Description
+  destroy: Destroy
+  display: 显示
+  edit: 编辑
+  editing_billing_integration: Editing Billing Integration
+  editing_category: "Editing Category"
+  editing_coupon: Editing Coupon
+  editing_option_type: "Editing Option Type"
+  editing_option_types: "Editing Option Types"
+  editing_payment_method: Editing Payment Method
+  editing_product: "Editing Product"
+  editing_product_group: "Editing Product Group"
+  editing_property: "Editing Property"
+  editing_prototype: "Editing Prototype"
+  editing_shipping_category: "Editing Shipping Category"
+  editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate
+  editing_state: "Editing State"
+  editing_tax_category: "Editing Tax Category"
+  editing_tax_rate: "Editing Tax Rate"
+  editing_tracker: Editing Tracker
+  editing_user: "Editing User"
+  editing_zone: "Editing Zone"
+  email: 邮件
+  email_address: "邮件地址"
+  email_server_settings_description: "Set email server settings."
+  empty_cart: "清空购物车"
+  enable_login_via_login_password: "Use standard email/password/使用标准邮件/密码"
+  enable_login_via_openid: "Use OpenID instead"
+  enable_mail_delivery: 使用邮件发送
+  enable_mail_queue: "Enable Mail Queue"
+  enter_exactly_as_shown_on_card: Please enter exactly as shown on the card
+  environment: "Environment"
+  error: error
+  event: Event
+  existing_customer: "现有客户"
+  expiration: "过期"
+  expiration_month: "Expiration Month"
+  expiration_year: "Expiration Year"
+  extension: Extension
+  extensions: Extensions
+  front_end: Front End
+  filename: Filename
+  final_confirmation: "Final Confirmation/最终确认"
+  finalize: Finalize
+  finalized_payments: Finalized Payments
+  first_item: First Item Cost
+  first_name: "名字"
+  first_name_begins_with: "First Name Begins With"
+  flat_percent: "Flat Percent"
+  flat_rate_amount: 数量
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
+  forgot_password: "Forgot Password"
+  full_name: "Full Name"
+  gateway: Gateway
+  gateway_configuration: "Gateway configuration"
+  gateway_error: "Gateway Error"
+  gateway_setting_description: "Select a payment gateway and configure its settings."
+  gateway_settings_warning: "If you are changing the gateway type, you must save first before you can edit the gateway settings"
+  general: "性别"
+  general_settings: "性别设定"
+  general_settings_description: "Configure general Spree settings."
+  google_analytics: "Google Analytics"
+  google_analytics_active: "Active"
+  google_analytics_create: "Create New Google Analytics Account"
+  google_analytics_id: "Analytics ID"
+  google_analytics_new: "New Google Analytics Account"
+  google_analytics_setting_description: "Manage Google Analytics ID"
+  guest_checkout: 游客结账
+  guest_user_account: 游客登出
+  has_no_shipped_units: has no shipped units
+  height: 高度
+  hello_user: "新用户"
+  history: 历史
+  home: "首页"
+  icons_by: "Icons by"
+  image: 图片
+  images: Images
+  images_for: "Images for"
+  in_progress: "进行中"
+  include_in_shipment: 本次发货
+  included_in_other_shipment: 下次发货
+  included_in_this_shipment: 本次发货
+  instructions_to_reset_password: "按指示填写下表重设密码会邮件给你"
+  integration_settings_warning: "If you are changing the billing integration, you must save first before you can edit the integration settings"
+  invalid_search: "Invalid search criteria."
+  inventory: 库存
+  inventory_adjustment: "Inventory Adjustment"
+  inventory_setting_description: "Inventory Configuration, Backordering, Zero-Stock Display"
+  inventory_settings: "Inventory Settings"
+  is_not_available_to_shipment_address: is not available to shipment address
+  issue_number: Issue Number
+  item: 条目
+  item_description: "条目描述"
+  item_total: "条目总计"
+  items: "条目"
+  last_14_days: "最近14天"
+  last_5_orders: "最近5个订单"
+  last_7_days: "最近一周"
+  last_month: "最近一月"
+  last_name: "姓氏"
+  last_name_begins_with: "Last Name Begins With"
+  last_year: "去年"
+  list: 列表
+  listing_categories: "Listing Categories"
+  listing_option_types: "Listing Option Types"
+  listing_orders: "Listing Orders"
+  listing_product_groups: "Listing Product Groups"
+  listing_reports: "Listing Reports"
+  listing_tax_categories: "Listing Tax Categories"
+  listing_users: "Listing Users"
+  live: "Live"
+  loading: Loading
+  locale_changed: "Locale Changed"
+  log_in: "登陆"
+  logged_in_as: "以身份登陆"
+  logged_in_succesfully: "登陆成功"
+  logged_out: "您已登出"
+  login_as_existing: "以现有客户登陆"
+  login_failed: "登陆认证失败"
+  login_name: 登陆
+  logout: 登出
+  look_for_similar_items: 寻找类似条目
+  maestro_or_solo_cards: Maestro/Solo cards
+  mail_delivery_enabled: "Mail delivery is enabled"
+  mail_delivery_not_enabled: "Mail delivery is not enabled"
+  mail_queue_enabled: "Mail queue is enabled"
+  mail_queue_not_enabled: "Mail queue is not enabled (emails are delivered immediately)"
+  mail_server_preferences: Mail Server Preferences
+  mail_server_settings: "Mail Server Settings"
+  make_refund: 退款
+  mark_shipped: "标记为已经运输"
+  master_price: "Master Price"
+  max_items: Max Items
+  meta_description: "Meta Description"
+  meta_keywords: "Meta Keywords"
+  metadata: "Metadata"
+  missing_required_information: "Missing Required Information/缺少所需信息"
+  month: "月"
+  my_account: "我的账户"
+  my_orders: "我的订单"
+  name: 名字
+  new: 新建
+  new_adjustment: "新调整"
+  new_billing_integration: New Billing Integration
+  new_category: "新类别"
+  new_coupon: New Coupon
+  new_customer: "新客户"
+  new_image: "新图片"
+  new_option_type: "New Option Type"
+  new_option_value: "New Option Value"
+  new_order: "新订单"
+  new_order_completed: "New Order Completed"
+  new_payment: "新付款"
+  new_payment_method: New Payment Method
+  new_product: "新产品"
+  new_product_group: /新产品组
+  new_property: "新属性"
+  new_prototype: "新原型"
+  new_return_authorization: New Return Authorization
+  new_shipment: "New Shipment"
+  new_shipping_category: "New Shipping Category"
+  new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
+  new_state: "New State"
+  new_tax_category: "New Tax Category"
+  new_tax_rate: "New Tax Rate"
+  new_taxon: "New Taxon"
+  new_taxonomy: "New Taxonomy"
+  new_tracker: New Tracker
+  new_user: "新用户"
+  new_variant: "新变化"
+  new_zone: "新区域"
+  next: 下一步
+  no_items_in_cart: "无"
+  no_match_found: "没有发现合适商品"
+  no_payment_methods_available: "Can't check out, no payment methods are configured for this environment"
+  no_products_found: "无此产品"
+  no_shipping_methods_available: "No shipping methods available, please change your address and try again."
+  no_user_found: "无此用户"
+  none: None/无
+  none_available: "无可用"
+  not: not
+  note: 注意
+  notice_messages:
+    option_type_removed: "Succesfully removed option type."
+    product_cloned: "Product has been cloned"
+    product_deleted: "Product has been deleted"
+    product_not_cloned: "Product could not be cloned"
+    product_not_deleted: "Product could not be deleted"
+    track_me_in_GA: "Track Me in GA"
+    variant_deleted: "Variant has been deleted"
+    variant_not_deleted: "Variant could not be deleted"
+  on_hand: "有货"
+  operation: Operation
+  option_Values: "Option Values"
+  option_types: "Option Types"
+  option_values: "Option Values"
+  options: Options
+  or: or
+  ord_qty: "订单数量"
+  ord_total: "订单总计"
+  order: 订单
+  order_confirmation_note: ""
+  order_date: "/订单日期"
+  order_details: "订单细节"
+  order_email_resent: "订单邮件重发"
+  order_not_in_system: That order number is not valid on this site.
+  order_number: Order
+  order_operation_authorize: Authorize
+  order_processed_but_following_items_are_out_of_stock: "Your order has been processed, but following items are out of stock:"
+  order_processed_successfully: "Your order has been processed successfully"
+  order_summary: 订单总计
+  order_sure_want_to: "订单确认?"
+  order_total: "订单总计"
+  order_total_message: "总计金额"
+  order_updated: "订单更新"
+  orders: 订单
+  other_payment_options: 其他付款方式
+  out_of_stock: "缺货"
+  out_of_stock_products: "缺货产品"
+  over_paid: "Over Paid"
+  overview: 总览
+  overview_welcome: "Welcome to your store overview, currently we do not have enough data to display the Overiew Dashboard.<br/><br/> The dashboard will display automatically once the system has sufficent orders to allow generation of the statistics."
+  page_only_viewable_when_logged_in: You attempted to visit a page which can only be viewed when you are logged in
+  page_only_viewable_when_logged_out: You attempted to visit a page which can only be viewed when you are logged out
+  paid: Paid/支付
+  parent_category: "Parent Category"
+  password: 密码
+  password_reset_instructions: "密码重置提示"
+  password_reset_instructions_are_mailed: "Instructions to reset your password have been emailed to you. Please check your email."
+  password_reset_token_not_found: "We're sorry, but we could not locate your account. If you are having issues try copying and pasting the URL from your email into your browser or restarting the reset password process."
+  password_updated: "密码修改成功"
+  path: Path
+  pay: pay
+  payment: 付款
+  payment_gateway: "Payment Gateway"
+  payment_information: "付款信息"
+  payment_method: 付款方式
+  payment_methods: Payment Methods
+  payment_methods_setting_description: Configure methods customers can use to pay
+  payment_updated: Payment Updated
+  payments: Payments
+  pending_payments: 未付款
+  permalink: Permalink
+  phone: 电话
+  place_order: 下订单
+  please_create_user: "请创建一个新用户"
+  powered_by: "Powered by"
+  presentation: Presentation
+  preview: 预览
+  previous: 上一个
+  price: 价格
+  price_with_vat_included: "{{price}} (inc. VAT)"
+  problem_authorizing_card: "Problem authorizing credit card"
+  problem_capturing_card: "Problem capturing credit card"
+  problems_processing_order: "We had problems processing your order"
+  proceed_as_guest: "No Thanks, Proceed as Guest"
+  process: Process
+  product: 产品
+  product_details: "产品说明"
+  product_group: Product Group
+  product_group_invalid: Product Group has invalid scopes
+  product_groups: Product Groups
+  product_has_no_description: 此产品无描述
+  product_properties: "产品属性"
+  product_scopes:
+    groups:
+      price:
+        description: "按产品价格范围选择"
+        name: 价格
+      search:
+        description: "Scopes for selecting products based on name, keywords and description of product"
+        name: "Text search"
+      taxon:
+        description: "Scopes for selecting products based on Taxons"
+        name: Taxon
+      values:
+        description: "Scopes for selecting products based on option and property values"
+        name: Values
+    scopes:
+      ascend_by_master_price:
+        name: Ascend by product master price
+      ascend_by_name:
+        name: Ascend by product name
+      ascend_by_updated_at:
+        name: Ascend by actualization date
+      descend_by_master_price:
+        name: Descend by product master price
+      descend_by_name:
+        name: Descend by product name
+      descend_by_popularity:
+        name: Sort by popularity(most popular first)
+      descend_by_updated_at:
+        name: Descend by actualization date
+      in_name:
+        args:
+          words: Words
+        description: "(separated by space or comma)"
+        name: "Product name have following"
+        sentence: product name contain <em>%s</em>
+      in_name_or_description:
+        args:
+          words: Words
+        description: "(separated by space or comma)"
+        name: "Product name or description have following"
+        sentence: name or description contain <em>%s</em>
+      in_name_or_keywords:
+        args:
+          words: Words
+        description: "(separated by space or comma)"
+        name: "Product name or meta keywords have following"
+        sentence: name or keywords contain <em>%s</em>
+      in_taxons:
+        args:
+          "taxon_names": "Taxon names"
+        description: "Taxon names have to be separated by comma or space(eg. adidas,shoes)"
+        name: "In taxons and all their descendants"
+        sentence: in <em>%s</em> and all their descendants
+      master_price_gte:
+        args:
+          amount: Amount
+        description: ""
+        name: "Master price greater or equal to"
+        sentence: price greater or equal to <em>%.2f</em>
+      master_price_lte:
+        args:
+          amount: Amount
+        description: ""
+        name: "Master price lesser or equal to"
+        sentence: price less or equal to <em>%.2f</em>
+      price_between:
+        args:
+          high: High
+          low: Low
+        description: ""
+        name: "Price between"
+        sentence: price between <em>%.2f</em> and <em>%.2f</em>
+      taxons_name_eq:
+        args:
+          taxon_name: "Taxon name"
+        description: "In specific taxon - without descendants"
+        name: "In Taxon(without descendants)"
+        sentence: in <em>%s</em>
+      with:
+        args:
+          value: Value
+        description: "Selects all products that have at least one variant that have specified value as either option or property (eg. red)"
+        name: With value
+        sentence: with value <em>%s</em>
+      with_option:
+        args:
+          option: Option
+        description: "Selects all products that have specified option(eg. color)"
+        name: "With option"
+        sentence: with option <em>%s</em>
+      with_option_value:
+        args:
+          option: Option
+          value: Value
+        description: "Selects all products that have at least one variant with specified option and value(eg. color:red)"
+        name: "With option and value"
+        sentence: with option <em>%s</em> and value <em>%s</em>
+      with_property:
+        args:
+          property: Property
+        description: "Selects all products that have specified property(eg. weight)"
+        name: "With property"
+        sentence: with property <em>%s</em>
+      with_property_value:
+        args:
+          property: Property
+          value: Value
+        description: "Selects all products that have at least one variant with specified property and value(eg. weight:10kg)"
+        name: "With property value"
+        sentence: with property <em>%s</em> and value <em>%s</em>
+  products: 产品
+  products_with_zero_inventory_display: "Products with a zero inventory will {{not}} be displayed"
+  properties: 属性
+  property: Property
+  prototype: Prototype
+  prototypes: Prototypes
+  provider: "供应商"
+  provider_settings_warning: "If you are changing the provider type, you must save first before you can edit the provider settings"
+  qty: 数量
+  quantity_shipped: Quantity Shipped
+  range: "范围"
+  rate: Rate
+  reason: 原因
+  recalculate_order_total: "重新计算总价"
+  receive: receive
+  received: Received
+  refund: 退款
+  register: 注册为新用户
+  register_or_guest: Checkout as Guest or Register
+  registration: Registration
+  remember_me: "记住"
+  remove: 删除
+  reports: 报告
+  required_for_solo_and_maestro: Required for Solo and Maestro cards.
+  resend: Resend
+  reset_password: "重置密码"
+  resource_controller:
+    member_object_not_found: "Member object not found."
+    successfully_created: "Successfully created!"
+    successfully_removed: "Successfully removed!"
+    successfully_updated: "Successfully updated!"
+  response_code: "Response Code"
+  resume: "重新开始"
+  resumed: Resumed
+  return: 返回
+  return_authorization: Return Authorization
+  return_authorization_updated: Return authorization updated
+  return_authorizations: Return Authorizations
+  return_quantity: Return Quantity
+  returned: Returned
+  rma_number: RMA Number
+  rma_value: RMA Value
+  roles: Roles
+  sales_tax: "Sales Tax"
+  sales_total: "Sales Total"
+  sales_total_for_all_orders: "Sales total for all orders"
+  sales_totals: "Sales Totals"
+  sales_totals_description: "Sales Total For All Orders"
+  save_and_continue: Save and Continue
+  save_preferences: Save Preferences
+  scope: Scope
+  scopes: Scopes
+  search: 搜索
+  search_results: "Search results for '{{keywords}}'"
+  secure_connection_type: Secure Connection Type
+  secure_creditcard: Secure Creditcard
+  select: 选择
+  select_from_prototype: "Select From Prototype"
+  select_preferred_shipping_option: "Select preferred shipping option"
+  send_copy_of_all_mails_to: Send Copy of All Mails To
+  send_copy_of_orders_mails_to: Send Copy of Order Mails To
+  send_mails_as: Send Mails As
+  send_order_mails_as: Send Order Mails As
+  server: Server
+  server_error: "The server returned an error"
+  settings: 设置
+  ship: ship
+  ship_address: "Ship Address"
+  shipment: Shipment
+  shipment_details: Shipment Details
+  shipment_number: "Shipment #"
+  shipment_updated: Shipment Updated
+  shipments: "运输"
+  shipped: 已运出
+  shipping: 运输中
+  shipping_address: "运送地址"
+  shipping_categories: "Shipping Categories"
+  shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
+  shipping_cost: 运输成本
+  shipping_error: "Shipping Error"
+  shipping_instructions: "运输说明"
+  shipping_method: "运输方式"
+  shipping_methods: "Shipping Methods"
+  shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
+  shipping_total: "运输总计"
+  shop_by_taxonomy: "Shop by {{taxonomy}}"
+  shopping_cart: "购物车"
+  show: 显示
+  show_active: "显示激活的"
+  show_deleted: "删除显示的"
+  show_incomplete_orders: "显示不成功订单"
+  show_only_complete_orders: "仅显示成功订单"
+  show_out_of_stock_products: "显示缺货产品"
+  show_price_inc_vat: "显示含税价"
+  showing_first_n: "Showing first {{n}}"
+  sign_up: "签名"
+  site_name: "Site Name"
+  site_url: "Site URL"
+  sku: SKU
+  smtp: SMTP
+  smtp_authentication_type: SMTP Authentication Type
+  smtp_domain: SMTP Domain
+  smtp_mail_host: SMTP Mail Host
+  smtp_password: SMTP Password
+  smtp_port: SMTP Port
+  smtp_send_all_emails_as_from_following_address: "Send all mails as from the following address."
+  smtp_send_copy_of_orders_to_this_addresses: "Sends a copy of all order's mails to this address. For multiple addresses, separate with commas."
+  smtp_send_copy_to_this_addresses: "Sends a copy of all outgoing mails to this address. For multiple addresses, separate with commas."
+  smtp_send_order_mails_as_from_following_address: "Send orders mails as from the following address."
+  smtp_username: SMTP Username
+  sold: Sold/售出
+  sort_ordering: "按订单排序"
+  spree:
+    date: Date
+    time: Time
+  ssl_will_be_used_in_development_and_test_modes: "SSL will be used in development and test mode if necessary."
+  ssl_will_be_used_in_production_mode: "SSL will be used in production mode"
+  ssl_will_not_be_used_in_development_and_test_modes: "SSL will not be used in development and test mode if necessary."
+  ssl_will_not_be_used_in_production_mode: "SSL will not be used in production mode"
+  start: 开始
+  start_date: 有效
+  state: State
+  state_based: "State Based"
+  state_setting_description: "Administer the list of states/provinces associated with each country."
+  states: States
+  status: Status
+  stop: 停止
+  store: 商店
+  street_address: "Street Address"
+  street_address_2: "Street Address (cont'd)"
+  subtotal: 小计
+  subtract: 减去
+  system: System
+  tax: Tax
+  tax_categories: "Tax Categories"
+  tax_categories_setting_description: "Set up tax categories to identify which products should be taxable."
+  tax_category: "Tax Category"
+  tax_rates: "Tax Rates"
+  tax_rates_description: Tax rates setup and configuration.
+  tax_settings: "Tax Settings"
+  tax_settings_description: Basic tax settings.
+  tax_total: "Tax Total"
+  tax_type: "Tax Type"
+  taxon: Taxon
+  taxon_edit: Edit Taxon
+  taxonomies: Taxonomies
+  taxonomies_setting_description: "Create and manage taxonomies"
+  taxonomy_edit: "Edit taxonomy"
+  taxonomy_tree_error: "The requested change has not been accepted and the tree has been returned to its previous state, please try again."
+  taxonomy_tree_instruction: "* Right click a child in the tree to access the menu for adding, deleting or sorting a child."
+  taxons: Taxons
+  test: "Test"
+  test_mode: Test Mode
+  thank_you_for_your_order: "感谢您的选购，请打印此页做为记录"
+  this_file_language: "英语"
+  this_month: "本月"
+  this_year: "今年"
+  thumbnail: "缩略图"
+  to_add_variants_you_must_first_define: "To add variants, you must first define"
+  top_grossing_products: "Top Grossing Products"
+  total: 总计
+  tracking: 跟踪
+  transaction: 交易
+  transactions: Transactions
+  tree: Tree
+  try_again: "再试一次"
+  type: 类别
+  unable_ship_method: "Unable to generate shipping methods due to a server error."
+  unable_to_authorize_credit_card: "Unable to Authorize Credit Card"
+  unable_to_capture_credit_card: "Unable to Capture Credit Card"
+  unable_to_connect_to_gateway: "Unable to connect to gateway."
+  unable_to_save_order: "Unable to Save Order"
+  under_paid: "Under Paid"
+  unrecognized_card_type: Unrecognized card type
+  update: Update/更新
+  update_password: "修改密码重新登录"
+  updated_successfully: "修改成功"
+  updating: Updating
+  usage_limit: Usage Limit
+  use_as_shipping_address: 作为发货地址
+  use_billing_address: 使用账单地址
+  use_different_shipping_address: "使用其他发货地址"
+  use_new_cc: "Use a new card"
+  user: 用户
+  user_account: 用户账号
+  user_created_successfully: "用户创建成功"
+  user_details: "用户明细"
+  users: 用户
+  validation:
+    is_too_large: "is too large -- stock on hand cannot cover requested quantity!"
+    must_be_int: "must be an integer"
+    must_be_non_negative: "must be a non-negative value"
+  value: Value
+  variants: Variants
+  vat: "VAT"
+  version: 版本
+  view_shipping_options: "显示发货选项"
+  void: 无效
+  website: 网址
+  weight: 重量
+  welcome_to_sample_store: "欢迎来到本商店"
+  what_is_a_cvv: "What is a (CVV) Credit Card Code?"
+  what_is_this: "What's This?"
+  whats_this: "What's this"
+  width: 宽
+  year: "年"
+  you_have_been_logged_out: "您已登出"
+  your_cart_is_empty: "您的购物车是空的"
+  zip: 邮编
+  zone: Zone
+  zone_based: "Zone Based"
+  zone_setting_description: "Collections of countries, states or other zones to be used in various calculations."
+  zones: Zones
