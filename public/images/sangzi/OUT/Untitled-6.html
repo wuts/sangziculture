@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>div+css设置滚动条</title>
+
+<style type="text/css">
+
+#container
+
+{
+
+width:200px;
+
+height:90px; 
+
+overflow:hidden;
+
+position:relative;
+
+top:10px;
+
+left:10px;
+
+z-index:2;
+
+}
+
+#inner
+
+{
+
+width:204px;
+
+height:100px;
+
+position:relative;
+
+top:-6px!important;
+
+top:-16px;left:0px;
+
+padding:11px 4px;
+
+z-index:1;
+
+overflow:auto; 
+
+background:#FFCC99;
+
+SCROLLBAR-FACE-COLOR: #a9a59b;
+
+SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+
+SCROLLBAR-SHADOW-COLOR: #ffffff; 
+
+SCROLLBAR-3DLIGHT-COLOR: #a9a59b; 
+
+SCROLLBAR-ARROW-COLOR: #dfdcd6; 
+
+SCROLLBAR-TRACK-COLOR:#dfdcd6;
+
+SCROLLBAR-DARKSHADOW-COLOR: #ffffff; 
+
+SCROLLBAR-BASE-COLOR: #a9a59b;
+
+}
+
+</style>
+
+</head>
+
+<body onselectstart="return false">
+
+
+
+<div id="test2" style="width:800px; height:300px; background:#ff6534; margin:0 auto;">
+
+    <div id="container" style="width:400px; height:190px;">
+
+         <div id="inner" style="width:404px; height:200px;top:-16px!important;">
+
+             <br/>a<br />b<br />c<br />d<br />e<br />f<br />g<br />h<br />i<br />
+
+             j<br />k<br />l<br />m<br />n<br />o<br />p<br />q<br />r<br />
+
+             s<br />t<br />u<br />v<br />w<br />x<br />y<br />z<br />ab<br />
+
+             ac<br />ad<br />ae<br />af<br />ag<br />ah<br />ai<br />aj<br />ak<br />
+
+             al<br />am<br />an<br />ao<br />ap<br />aq<br />ar<br />as<br />at<br />
+
+             au<br />av<br />aw<br />ax<br />ay<br />az<br /><br/>
+
+         </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
