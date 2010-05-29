@@ -1,0 +1,301 @@
+.index {
+	height: 100%;
+	width: 100%;
+	background-color: #b898c1;
+	background-image: url(../images/bj.jpg);
+}
+.index a:active {
+	color: #E1E3F2;
+	text-decoration: none;
+}
+.index a:hover {
+	color: #6C327F;
+	text-decoration: none;
+}
+.index a:link {
+	color: #6C327F;
+	text-decoration: none;
+}
+.index a:visited {
+	color: #6C327F;
+	text-decoration: none;
+}
+
+.index .beian {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	color: #6C327F;
+	height: 20px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.index .logo {
+	width: 700px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.index .nrbj {
+	background-image: url(../images/nrbj.jpg);
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 270px;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6c327f;
+	border-right-color: #6c327f;
+	border-bottom-color: #6c327f;
+	border-left-color: #6c327f;
+	margin-top: 10px;
+}
+.index .dh {
+	width: 690px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 30px;
+	padding-left: 150px;
+}
+.index .dh a:link {
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #6C327F;
+}
+.index .dh a:visited {
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color: #6C327F;
+}
+.index .dh a:hover {
+	color: #DFE2F1;
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+}
+.index .dh a:active {
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #E1E3F2;
+}
+
+.index .dh .ljwz {
+	width: 23px;
+	height: 30px;
+	float: left;
+	margin-left: 8px;
+}
+.index .dh .wzys {
+	float: left;
+	height: 30px;
+	width: 60px;
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 13px;
+	padding-top: 2px;
+}
+.index .about {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 270px;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6c327f;
+	border-right-color: #6c327f;
+	border-bottom-color: #6c327f;
+	border-left-color: #6c327f;
+	margin-top: 10px;
+	background-color: #E1E3F2;
+}
+.index .about .cptpk {
+	margin: 8px;
+	float: left;
+	width: 384px;
+}
+.index .about .buynr {
+	float: left;
+	width: 275px;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.index .about .buynr .lk {
+	float: left;
+	margin-left: 6px;
+	color: #6C327F;
+	border: thin none #E1E3F2;
+	background-color: #E1E3F2;
+	text-align: center;
+}
+
+.index .about .buynr .gw {
+	float: left;
+	width: 100px;
+}
+
+.index .about .baouttp {
+	margin: 10px;
+	width: 280px;
+	float: left;
+}
+.index .about .aboutnr {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 20px;
+	font-weight: normal;
+	float: left;
+}
+.index .about .aboutnr .gw {
+	float: left;
+	width: 100px;
+}
+
+.index .about .aboutnr .gdwz {
+	height: 19px;
+	text-align: center;
+	padding: 2px;
+}
+.index .Product {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.index .Product .fyl {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6C327F;
+	margin-top: 2px;
+}
+
+.index .dhfl {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: #7C3480;
+	text-decoration: none;
+	margin-top: 30px;
+	margin-left: auto;
+	height: 25px;
+	width: 500px;
+	line-height: 11px;
+	padding-top: 1px;
+	margin-right: auto;
+	padding-left: 400px;
+}
+.index .dhfl .dhflwz {
+	width: 75px;
+	float: left;
+	margin-left: 5px;
+	padding-top: 2px;
+}
+.index .dhfl a:link {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6C327F;
+	text-decoration: none;
+}
+.index .dhfl a:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6C327F;
+	text-decoration: none;
+}
+.index .dhfl a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #E1E3F2;
+	text-decoration: none;
+}
+.index .list {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 270px;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6c327f;
+	border-right-color: #6c327f;
+	border-bottom-color: #6c327f;
+	border-left-color: #6c327f;
+	margin-top: 10px;
+	background-color: #E1E3F2;
+}
+.index .list .gwc {
+	height: 30px;
+	width: 660px;
+	margin-top: 18px;
+	margin-right: 18px;
+	margin-bottom: 5px;
+	margin-left: 18px;
+	font-family: "宋体";
+	font-size: 14px;
+	color: #6C327F;
+	line-height: 15px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: dashed;
+	border-top-color: #B898C1;
+	border-right-color: #B898C1;
+	border-bottom-color: #B898C1;
+	border-left-color: #B898C1;
+	padding-left: 10px;
+}
+.index .list .wplb {
+	width: 660px;
+	margin-top: 5px;
+	margin-right: 18px;
+	margin-bottom: 5px;
+	margin-left: 18px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #6C327F;
+}
+.index .dh .hzgy {
+	float: left;
+	height: 30px;
+	width: 90px;
+	font-family: "宋体";
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 13px;
+	padding-top: 2px;
+	padding-right: 1px;
+	padding-left: 1px;
+}

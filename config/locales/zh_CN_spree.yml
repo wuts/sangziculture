@@ -8,7 +8,7 @@ zh_CN:
   access_denied: "Access Denied"
   account: 帐户
   account_updated: "帐户升级完成"
-  action: 动作
+  action: 操作
   alt_text: 可选文字
   actions:
     cancel: 取消
@@ -115,7 +115,7 @@ zh_CN:
         permalink: Permalink
         position: Position
       taxonomy:
-        name: Name
+        name: 名称
       user:
         email: 邮件地址
       variant:
@@ -170,8 +170,8 @@ zh_CN:
         one: Property
         other: Properties
       prototype:
-        one: Prototype
-        other: Prototypes
+        one: 原型
+        other: 原型
       return_authorization:
         one: Return Authorization
         other: Return Authorizations
@@ -194,14 +194,14 @@ zh_CN:
         one: "Tax Rate"
         other: "Tax Rates"
       taxon:
-        one: Taxon
-        other: Taxons
+        one: 分类
+        other: 分类
       taxonomy:
-        one: Taxonomy
-        other: Taxonomies
+        one: 分类管理
+        other: 分类管理
       user:
-        one: User
-        other: Users
+        one: 用户
+        other: 用户
       variant:
         one: Variant
         other: Variants
@@ -719,8 +719,8 @@ zh_CN:
   products_with_zero_inventory_display: "Products with a zero inventory will {{not}} be displayed"
   properties: 属性
   property: Property
-  prototype: Prototype
-  prototypes: Prototypes
+  prototype: 原型
+  prototypes: 原型
   provider: "供应商"
   provider_settings_warning: "If you are changing the provider type, you must save first before you can edit the provider settings"
   qty: 数量

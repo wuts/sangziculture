@@ -1,4 +1,6 @@
 class ProductsController < Spree::BaseController
+
+
   HTTP_REFERER_REGEXP = /^https?:\/\/[^\/]+\/t\/([a-z0-9\-\/]+\/)$/
 
   prepend_before_filter :reject_unknown_object, :only => [:show]
@@ -13,10 +15,10 @@ class ProductsController < Spree::BaseController
   private
 
   def load_data
-    #load_object  
-    @variants = Variant.active.find_all_by_product_id(@product.id, 
+    #load_object
+    @variants = Variant.active.find_all_by_product_id(@product.id,
                 :include => [:option_values, :images])
-    @product_properties = ProductProperty.find_all_by_product_id(@product.id, 
+    @product_properties = ProductProperty.find_all_by_product_id(@product.id,
                           :include => [:property])
     @selected_variant = @variants.detect { |v| v.available? }
 
@@ -30,7 +32,7 @@ class ProductsController < Spree::BaseController
   def collection
     retrieve_products
   end
-  
+
   def accurate_title
     @product ? @product.name : nil
   end
