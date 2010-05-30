@@ -19,12 +19,12 @@
 }
 
 #header .top_menu {
-    width: 600px;
+    width: 580px;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     height: 30px;
-    padding-left: 150px;
+    padding-left: 10px;
     float:right;
 }
 #header .top_menu a:link {

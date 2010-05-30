@@ -11,20 +11,6 @@ SPREE_GEM_VERSION = '0.10.99' unless defined? SPREE_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Spree::Initializer.run do |config|
-  # Settings in config/environments/* take precedence over those specified here.
-  # Application configuration should go into files in config/initializers
-  # -- all .rb files in that directory are automatically loaded.
-  # See Rails::Configuration for more options.
-
-  # Skip frameworks you're not going to use. To use Rails without a database
-  # you must remove the Active Record framework.
-  # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
-
-  # Specify gems that this application depends on.
-  # They can then be installed with "rake gems:install" on new installations.
-  # config.gem "bj"
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
-  # config.gem "aws-s3", :lib => "aws/s3"
 
   config.gem "highline", :version => '1.5.1'
   config.gem 'authlogic', :version => '>=2.1.2'

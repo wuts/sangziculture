@@ -12,8 +12,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 *:focus { outline: 0; }
 body {
   line-height: 1em;
-  color: black;
-  background: #b898c1;
+
+  background-color: #b898c1;
+
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 75%;
 
 }
 ol, ul { list-style: none; }
@@ -55,13 +59,7 @@ hr.space {
   background: #ffffff;
   color: #ffffff;
 }
-body {
-  line-height: 1.5;
-  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-  color: #333333;
-  font-size: 75%;
 
-}
 h1 {
   font-weight: normal;
   color: #222222;
@@ -277,10 +275,10 @@ div.right {
 a { outline: none; }
 #wrapper {
   background-image: url(../images/sangzi/nrbj.jpg);
-    width: 950px;
+    width: 750px;
     margin-right: auto;
     margin-left: auto;
-    height: 370px;
+    height: 270px;
     border-top-width: medium;
     border-right-width: medium;
     border-bottom-width: medium;
@@ -296,7 +294,7 @@ a { outline: none; }
 }
 body.two-col #wrapper { }
 .container {
-  width: 950px;
+  width: 750px;
   margin: 0 auto;
   overflow: hidden;
   display: block;
@@ -314,7 +312,7 @@ body.two-col #wrapper { }
 body.one-col #content {
   display: inline;
   float: left;
-  width: 950px;
+  width: 50px;
 }
 body.two-col #content {
   display: inline;
@@ -325,7 +323,6 @@ body.two-col #content {
   position: relative;
   color: #2e6ab1;
   clear: both;
-
   background: #b898c1 url(../images/sangzi/bj.jpg) top left repeat-x;
 }
 
@@ -347,6 +344,8 @@ body.two-col #content {
 }
 
 #logo{float:left;margin-left:0px;margin-top:5px;}
+
+#pagination{width:750px;text-align:center;}
 
 #footer div.left { width: 37%; }
 #footer div.right {
