@@ -788,7 +788,7 @@ p button img { margin: 0 5px 0 0; }
   border: 1px solid #dddddd;
   position: relative;
 }
-.product-listing li img{height:200px;}
+.product-listing li img{height:200px;max-width:250px;}
 
 .product-listing li a {
   display: block;
