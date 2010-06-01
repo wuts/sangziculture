@@ -1,0 +1,40 @@
+#nav{
+    width:600px;
+    height:30px;
+    border-bottom:0px;
+    padding:0px 5px;
+    position:absolute;
+    z-index:1;
+    left: 198px;
+    top: 25px;
+}
+.list{
+    line-height:20px;
+    text-align:left;
+    padding:4px;
+    font-weight:normal;
+}
+.menu1{
+    width:120px;
+    height:auto;
+    margin:6px 4px 0px 0px;
+    border:1px solid #9CDD75;
+    background-color:#F1FBEC;
+    color:#336601;
+    padding:6px 0px 0px 0px;
+    cursor:hand;
+    overflow-y:hidden;
+    filter:Alpha(opacity=70);
+    -moz-opacity:0.7;
+}
+.menu2{
+    width:120px;
+    height:18px;
+    margin:6px 4px 0px 0px;
+    background-color:#F5F5F5;
+    color:#999900;
+    border:1px solid #EEE8DD;
+    padding:6px 0px 0px 0px;
+    overflow-y:hidden;
+    cursor:hand;
+}
