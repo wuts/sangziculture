@@ -1,4 +1,7 @@
-
+<%
+  paginated_products = Spree::Config.searcher.products if params.key?(:keywords)
+  paginated_products ||= products
+%>
 <div class="nrbj">
 <div class="Product">
 <div style="overflow: hidden; height: 250px; width: 750px;" id="demo">

@@ -14,14 +14,13 @@
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
       <li id="product_<%= product.id %>">
         <%= link_to product_image(product), product %>
-        <%= link_to product.name + "<span class='price selling'>#{product_price(product)}</span>", product, :class => 'info' %>
+
       </li>
     <% end %>
   <% end %>
 </ul>
 <% end %>
 
-<hr class="space" />
 
 <% if paginated_products.respond_to?(:total_pages)
       params.delete(:search)
@@ -32,4 +31,3 @@
                     :next_label => "#{t('next')} &#187;") %>
 <% end -%>
 
-<hr class="space" />

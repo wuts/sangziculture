@@ -20,11 +20,11 @@
   <% end %>
 
 <% else %>
-
+  <div id="product-index" class="container">
   <% hook :homepage_products do %>
     <%= render "shared/products", :products => @products, :taxon => @taxon %>
   <% end %>
-
+  </div>
 
 <% end %>
 

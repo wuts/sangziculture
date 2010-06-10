@@ -1,5 +1,4 @@
 <% @body_id = 'product-details' %>
-
 <div id="product-images">
   <div id="main-image">
     <%=link_to "#{render 'image'}",'image_url' -%>
@@ -8,7 +7,12 @@
    <div id="thumbnails">
     <%= render 'thumbnails', :product => @product -%>
   </div>
+  <div id="product-properties">
 
+ <% hook :product_properties do %>
+    <%= render 'properties' %>
+  <% end %>
+  </div>
 
 </div>
 
@@ -23,12 +27,6 @@
       </div>
      <% end %>
 
-</div>
-<div id="product-properties">
- <h3>产品属性</h3>
- <% hook :product_properties do %>
-    <%= render 'properties' %>
-  <% end %>
 </div>
 
 

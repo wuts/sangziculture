@@ -274,11 +274,12 @@ div.right {
 }
 a { outline: none; }
 #wrapper {
-  background-image: url(../images/sangzi/nrbj.jpg);
+    background-color:#E1E3F2;
     width: 750px;
     margin-right: auto;
     margin-left: auto;
-    height: 270px;
+    min-height: 270px;
+    height:auto;
     border-top-width: medium;
     border-right-width: medium;
     border-bottom-width: medium;
@@ -779,7 +780,7 @@ p button img { margin: 0 5px 0 0; }
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  height: 240px;
+  height: 230px;
 
   text-align: center;
   float: left;
@@ -788,7 +789,7 @@ p button img { margin: 0 5px 0 0; }
   border: 1px solid #dddddd;
   position: relative;
 }
-.product-listing li img{height:200px;max-width:230px;}
+.product-listing li img{height:220px;max-width:230px;}
 
 .product-listing li a {
   display: block;
@@ -905,23 +906,26 @@ ul.thumbnails li.selected { border-color: #999999; }
   margin: auto;
 }
 
+#product-index {
+   background-image: url(../images/sangzi/nrbj.jpg);
+}
 
 #product-description {
 
   display: inline;
   float: left;
-  width: 300px;
+  width: 430px;
   margin-right: 10px;
   font-size:12px;
   line-height:20px;
   margin-top:10px;
-  border-right: 1px solid #eeeeee;
+
 }
 
 #product-properties {
-     margin-top:10px;
-    float: right;
-    width: 150px;
+    margin:10px auto auto 10px;
+    float:left;
+    width: 200px;
 }
 
 #cart-form {
@@ -956,7 +960,7 @@ dl.table-display dd {
   border-top: 1px solid #dddddd;
 }
 dl.table-display dt { width: 100px; }
-dl.table-display dd { width: 180px; }
+dl.table-display dd { width: 80px; }
 .no_margin_or_padding {
   margin: 0;
   padding: 0;
