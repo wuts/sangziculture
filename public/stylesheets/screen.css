@@ -345,8 +345,9 @@ body.two-col #content {
 }
 
 #logo{float:left;margin-left:0px;margin-top:5px;}
-
+#fyl{float:left;}
 #pagination{width:750px;text-align:center;}
+.pagination{float:right;}
 
 #footer div.left { width: 37%; }
 #footer div.right {

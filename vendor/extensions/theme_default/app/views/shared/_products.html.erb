@@ -1,5 +1,5 @@
 <%
-  #paginated_products = Spree::Config.searcher.products if params.key?(:keywords)
+  paginated_products = Spree::Config.searcher.products if params.key?(:keywords)
   paginated_products ||= products
 %>
 <% if products.empty? %>
@@ -9,6 +9,7 @@
 <% end %>
 
 <% if products.any? %>
+  <div id="product-index" class="container">
 <ul class="product-listing">
   <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
@@ -19,6 +20,7 @@
     <% end %>
   <% end %>
 </ul>
+ </div>
 <% end %>
 
 
@@ -28,9 +30,18 @@
 
    %>
 <div id="fyl" class="container">
+   <select id="select" class="fyl" size="1" name="select">
+      <option>清雅布包(Elegant)</option>
+      <option>小件袋(Mini)</option>
+      <option>传统布艺(Traditional)</option>
+      <option>温馨家饰(Decoration)</option>
+      <option>田园布玩(Toy)</option>
+      <option>毛线编织(Wool)</option>
+    </select>
+    <input type="text" size="14" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
+    <input type="submit" value="搜索/search" id="button" class="fyl" name="button">
 <%= will_paginate(paginated_products,
-                    :previous_label => "&#171; #{t('previous')}",
-:next_label => "#{t('next')} &#187;")
+                    :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
 %>
 </div>
 <% end -%>

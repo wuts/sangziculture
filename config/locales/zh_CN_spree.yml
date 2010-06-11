@@ -512,7 +512,7 @@ zh_CN:
   new_user: "新用户"
   new_variant: "新变化"
   new_zone: "新区域"
-  next: 下一步
+  next: 下一页
   no_items_in_cart: "无"
   no_match_found: "没有发现合适商品"
   no_payment_methods_available: "Can't check out, no payment methods are configured for this environment"
@@ -590,7 +590,7 @@ zh_CN:
   powered_by: "Powered by"
   presentation: Presentation
   preview: 预览
-  previous: 上一个
+  previous: 上一页
   price: 价格
   price_with_vat_included: "{{price}} (inc. VAT)"
   problem_authorizing_card: "Problem authorizing credit card"
