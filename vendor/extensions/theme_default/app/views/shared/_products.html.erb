@@ -37,7 +37,7 @@
      <option  <%=' class="current"'  if @taxon && @taxon == taxonomy.root %>><%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %></option>
       <% taxonomy.root.children.each do |taxon| %>
 
-     <option <%= ' class="current"'if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>> <%= link_to taxon.name, seo_url(taxon) %><%= debug  taxon.name %> </option>
+     <option <%= ' class="current"'if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>> <%= link_to taxon.name, seo_url(taxon) %> </option>
 
        <% end %>
        <% end %>
