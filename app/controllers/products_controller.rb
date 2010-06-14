@@ -1,6 +1,5 @@
 class ProductsController < Spree::BaseController
 
-
   HTTP_REFERER_REGEXP = /^https?:\/\/[^\/]+\/t\/([a-z0-9\-\/]+\/)$/
 
   prepend_before_filter :reject_unknown_object, :only => [:show]
@@ -11,6 +10,8 @@ class ProductsController < Spree::BaseController
   actions :show, :index
 
   include Spree::Search
+
+
 
   private
 
@@ -26,6 +27,7 @@ class ProductsController < Spree::BaseController
 
     if referer  && referer.match(HTTP_REFERER_REGEXP)
       @taxon = Taxon.find_by_permalink($1)
+      return render :text=>@taxon.to_s
     end
   end
 

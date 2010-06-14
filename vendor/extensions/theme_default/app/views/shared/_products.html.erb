@@ -30,13 +30,17 @@
 
    %>
 <div id="fyl" class="container">
+
    <select id="select" class="fyl" size="1" name="select">
-      <option>清雅布包(Elegant)</option>
-      <option>小件袋(Mini)</option>
-      <option>传统布艺(Traditional)</option>
-      <option>温馨家饰(Decoration)</option>
-      <option>田园布玩(Toy)</option>
-      <option>毛线编织(Wool)</option>
+     <% get_taxonomies.each do |taxonomy| %>
+
+     <option  <%=' class="current"'  if @taxon && @taxon == taxonomy.root %>><%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %></option>
+      <% taxonomy.root.children.each do |taxon| %>
+
+     <option <%= ' class="current"'if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>> <%= link_to taxon.name, seo_url(taxon) %><%= debug  taxon.name %> </option>
+
+       <% end %>
+       <% end %>
     </select>
     <input type="text" size="14" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
     <input type="submit" value="搜索/search" id="button" class="fyl" name="button">
