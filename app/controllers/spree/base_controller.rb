@@ -11,8 +11,8 @@ class Spree::BaseController < ActionController::Base
   before_filter :load_categories
 
   def load_categories
-     @taxons=Taxon.find_by_name("Categories/目录").children
-     @first_children_taxons=@taxons.first.children
+     @root_taxons=Taxon.find_by_name("Categories/目录").children
+
   end
 
 

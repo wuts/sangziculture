@@ -16,7 +16,7 @@ class TaxonsController < Spree::BaseController
   def object
     @object ||= end_of_association_chain.find_by_permalink(params[:id].join("/") + "/")
   end
-  
+
   def accurate_title
     @taxon ? @taxon.name : nil
   end

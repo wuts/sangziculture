@@ -22,20 +22,21 @@ href="file:///home/wuts/%E4%B8%8B%E8%BD%BD/sangzihtml/Contact.html">联系我们
     Contact</a></div>
 
 <div class="second_menu">
+
   <ul>
-    <% @taxons.each do |taxon| %>
-    <li><%= link_to taxon.name,seo_url(taxon),{:onclick=>"$('div.children').hide();$('#taxon-#{taxon.id}').show();"} %>
-      <% if Taxon.find(taxon.id).children %>
-      <div class="children hidden" id="taxon-<%= taxon.id%>">
-         <% Taxon.find(taxon.id).children.each do |ttaxon| %>
-         <span><%= link_to ttaxon.name,seo_url(ttaxon) %></span>
-         <% end %>
-      <% end %>
-      </div>
-    </li>
+    <% @root_taxons.each do |taxon| %>
+    <li><%= link_to taxon.name,seo_url(taxon) %>    </li>
     <% end %>
   </ul>
 </div>
 
+<div class="third_menu">
+<ul>
+  <% @taxon.children.each do |child_taxon| if @taxon %>
 
-<div id="children_taxons" class="hidden">fsdfsdfdsfsdf</div>
+    <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
+    <% end %>
+
+    <% end %>
+    </ul>
+</div>
