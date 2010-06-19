@@ -31,12 +31,13 @@ href="file:///home/wuts/%E4%B8%8B%E8%BD%BD/sangzihtml/Contact.html">联系我们
 </div>
 
 <div class="third_menu">
+   <% if @taxon %>
+
 <ul>
-  <% @taxon.children.each do |child_taxon| if @taxon %>
+    <% @taxon.children.each do |child_taxon| %>
 
-    <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
+      <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
     <% end %>
-
+  </ul>
     <% end %>
-    </ul>
 </div>
