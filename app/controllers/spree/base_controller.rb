@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class Spree::BaseController < ActionController::Base
   layout 'spree_application'
   helper :application, :hook
@@ -6,6 +7,12 @@ class Spree::BaseController < ActionController::Base
   before_filter :set_user_language
   filter_parameter_logging :password, :password_confirmation, :number, :verification_value
   helper_method :current_user_session, :current_user, :title, :title=, :get_taxonomies, :current_gateway
+
+  before_filter :load_categories
+
+  def load_categories
+     @taxons=Taxon.find_by_name("Categories/目录").children
+  end
 
   # Pick a unique cookie name to distinguish our session data from others'
   session_options['session_key'] = '_spree_session_id'
