@@ -18,7 +18,7 @@ class ProductsController < Spree::BaseController
   private
 
   def load_categories
-     @taxons=Taxon.find_by_name("categories").children
+     @taxons=Taxon.all
   end
 
   def load_data
