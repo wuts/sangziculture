@@ -236,6 +236,9 @@ legend {
   width: 49%;
 }
 
+.hidden{display:none;}
+.children{padding:0;height:30px;position:absolute;margin-top:20px;margin-left:10px;}
+.children span{margin-top:0;padding-top:0;}
 .clear{clear:both;}
 .clearfix {
   overflow: hidden;

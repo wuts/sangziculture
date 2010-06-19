@@ -24,17 +24,18 @@ href="file:///home/wuts/%E4%B8%8B%E8%BD%BD/sangzihtml/Contact.html">联系我们
 <div class="second_menu">
   <ul>
     <% @taxons.each do |taxon| %>
-    <li><%=link_to_remote taxon.name,:update=>'third_menu',:url=>{ :controller=>'products',:action=>'get_children',:parent_id=>taxon.id } %></li>
+    <li><%= link_to taxon.name,seo_url(taxon),{:onclick=>"$('div.children').hide();$('#taxon-#{taxon.id}').show();"} %>
+      <% if Taxon.find(taxon.id).children %>
+      <div class="children hidden" id="taxon-<%= taxon.id%>">
+         <% Taxon.find(taxon.id).children.each do |ttaxon| %>
+         <span><%= link_to ttaxon.name,seo_url(ttaxon) %></span>
+         <% end %>
+      <% end %>
+      </div>
+    </li>
     <% end %>
   </ul>
 </div>
-<div class="third_menu" id="third_menu">
-  <ul>
 
-    <% @first_children_taxons.each do |ctaxon| if @first_children_taxons %>
-    <li><%=ctaxon.name %></li>
-    <% end %>
-    <% end %>
-  </ul></div>
-</div>
 
+<div id="children_taxons" class="hidden">fsdfsdfdsfsdf</div>
