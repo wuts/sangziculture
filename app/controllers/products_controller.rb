@@ -4,6 +4,8 @@ class ProductsController < Spree::BaseController
 
   prepend_before_filter :reject_unknown_object, :only => [:show]
   before_filter :load_data, :only => :show
+  before_filter :load_categories,:only=>:index
+
 
   resource_controller
   helper :taxons
@@ -14,6 +16,10 @@ class ProductsController < Spree::BaseController
 
 
   private
+
+  def load_categories
+     @taxons=Taxon.find_by_name("categories").children
+  end
 
   def load_data
     #load_object

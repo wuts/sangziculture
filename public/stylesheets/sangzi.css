@@ -75,6 +75,13 @@
     line-height: 13px;
     padding-top: 2px;
 }
+
+#header .top_menu .second_menu ul{margin-left:120px;margin-top:40px;padding-bottom:5px;font-size:12px;border-bottom: 1px dotted;}
+#header .top_menu .second_menu ul li{display:inline;padding-right:5px;border-right:1px dotted;}
+
+#header .top_menu .third_menu ul{margin-left:120px;margin-top:16px;padding-bottom:5px;font-size:12px;border-bottom: 1px dotted;}
+#header .top_menu .third_menu ul li{display:inline;padding-right:5px;border-right:1px dotted;}
+
 #header .about {
     width: 700px;
     margin-right: auto;

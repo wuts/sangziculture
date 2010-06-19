@@ -6,6 +6,7 @@ class Taxon < ActiveRecord::Base
   before_create :set_permalink
   before_save :ensure_trailing_slash
 
+
   # indicate which filters should be used for a taxon
   # this method should be customized to your own site
   include ::ProductFilters  # for detailed defs of filters
