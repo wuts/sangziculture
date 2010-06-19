@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class ProductsController < Spree::BaseController
 
   HTTP_REFERER_REGEXP = /^https?:\/\/[^\/]+\/t\/([a-z0-9\-\/]+\/)$/
@@ -18,7 +19,7 @@ class ProductsController < Spree::BaseController
   private
 
   def load_categories
-     @taxons=Taxon.all
+     @taxons=Taxon.find_by_name("Categories/目录").children
   end
 
   def load_data
