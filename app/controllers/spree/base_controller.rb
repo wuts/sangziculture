@@ -12,7 +12,10 @@ class Spree::BaseController < ActionController::Base
 
   def load_categories
      @taxons=Taxon.find_by_name("Categories/目录").children
+     @first_children_taxons=@taxons.first.children
   end
+
+
 
   # Pick a unique cookie name to distinguish our session data from others'
   session_options['session_key'] = '_spree_session_id'

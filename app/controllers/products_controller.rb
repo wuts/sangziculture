@@ -14,7 +14,16 @@ class ProductsController < Spree::BaseController
 
   include Spree::Search
 
+  def get_children
 
+     @children_of_taxon=Taxon.find(params["parent_id"]).children
+    result="<ul>"
+    @children_of_taxon.each do |taxon|
+      result+="<li>"+taxon.name+"</li>"
+    end
+    result+="</ul>"
+     render :text=>result
+  end
 
   private
 

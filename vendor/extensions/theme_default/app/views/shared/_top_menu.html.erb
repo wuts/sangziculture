@@ -24,10 +24,17 @@ href="file:///home/wuts/%E4%B8%8B%E8%BD%BD/sangzihtml/Contact.html">联系我们
 <div class="second_menu">
   <ul>
     <% @taxons.each do |taxon| %>
-    <li><%=taxon.name %></li>
+    <li><%=link_to_remote taxon.name,:update=>'third_menu',:url=>{ :controller=>'products',:action=>'get_children',:parent_id=>taxon.id } %></li>
     <% end %>
   </ul>
 </div>
-<div class="third_menu"><ul><li><a href="tt">压制</a></li><li><a href="tt">挂件</a></li></ul></div>
+<div class="third_menu" id="third_menu">
+  <ul>
+
+    <% @first_children_taxons.each do |ctaxon| if @first_children_taxons %>
+    <li><%=ctaxon.name %></li>
+    <% end %>
+    <% end %>
+  </ul></div>
 </div>
 
