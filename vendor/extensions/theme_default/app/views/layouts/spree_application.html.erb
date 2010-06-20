@@ -20,7 +20,10 @@ end
     <%= render 'shared/top_menu' %>
 
   </div>
-    <div class="clear"></div>
+  <div class="clear"></div>
+<div id="login-bar"><%= link_to "登录Login","/login"%><%= image_tag "dot01.gif" %><%= link_to "注册Register","/signup"%></div>
+<div class="clear"></div>
+
     <div id="wrapper" class="container">
       <% if @content_for_sidebar %>
     <div id="sidebar">
