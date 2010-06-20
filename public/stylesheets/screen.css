@@ -607,7 +607,7 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   margin: 0px;
 }
 .errorExplanation {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 1em;
   padding: 0.8em;
   -moz-border-radius: 5px;
@@ -617,7 +617,7 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   color: #000000;
   border: 1px solid #000000;
 }
-.errorExplanation p { margin: 0px; }
+.errorExplanation p { margin: 0px;line-height:20px; }
 .errorExplanation ul { margin-bottom: 0px; }
 .errorExplanation h2 {
   font-weight: bold;
@@ -1053,10 +1053,10 @@ table#cart h4 { margin-bottom: 0em; }
   border-right: 1px solid #eeeeee;
 }
 #signup #new-customer {
-  display: inline;
-  float: left;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top:20px;
   width: 470px;
-  margin-right: 10px;
 }
 #signup #new-customer h2 { margin-bottom: 0.25em; }
 #signup #new-customer p { margin-bottom: 10px; }
@@ -1066,10 +1066,10 @@ table#cart h4 { margin-bottom: 0em; }
 }
 #signup #new-customer input[type=checkbox] { top: 0em; }
 #login #existing-customer {
-  display: inline;
-  float: left;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top:20px;
   width: 470px;
-  margin-right: 10px;
 }
 #login #existing-customer h2 { margin-bottom: 0.25em; }
 #login #existing-customer p { margin-bottom: 10px; }

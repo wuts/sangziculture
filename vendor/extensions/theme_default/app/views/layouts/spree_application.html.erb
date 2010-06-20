@@ -21,7 +21,13 @@ end
 
   </div>
   <div class="clear"></div>
-<div id="login-bar"><%= link_to "登录Login","/login"%><%= image_tag "dot01.gif" %><%= link_to "注册Register","/signup"%></div>
+<div id="login-bar"><% if current_user -%>
+  <span><%= link_to t('my_account'), user_path(current_user) %></span><%= image_tag "dot01.gif" %>
+  <span><%= link_to t('logout'), logout_path %></span>
+<% else %>
+<span><%= link_to t('log_in'), login_path %><%= image_tag "dot01.gif" %></span>
+<span><%= link_to t('signup'), signup_path %></span>
+<% end -%></div>
 <div class="clear"></div>
 
     <div id="wrapper" class="container">
