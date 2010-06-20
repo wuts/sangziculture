@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :articles
+
 
   # Loads all extension routes in the order they are specified.
   map.load_extension_routes
@@ -69,6 +71,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :admin do |admin|
     admin.resources :coupons
+    admin.resources :articles
     admin.resources :zones
     admin.resources :users
     admin.resources :countries, :has_many => :states

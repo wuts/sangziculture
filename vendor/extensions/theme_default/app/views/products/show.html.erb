@@ -17,7 +17,7 @@
 </div>
 
 <div id="product-description">
-  <h1><%= @product.name %></h1>
+  <h2><%= @product.name %></h2>
   <% hook :product_description do %>
     <%= product_description(@product) rescue t("product_has_no_description") %>
     <% end %>
