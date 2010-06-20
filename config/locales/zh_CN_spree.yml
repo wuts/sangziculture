@@ -458,7 +458,7 @@ zh_CN:
   logged_in_as: "以身份登录"
   logged_in_succesfully: "登录成功"
   logged_out: "您已退出"
-  login_as_existing: "以现有客户登录"
+  login_as_existing: "已注册用户登录"
   login_failed: "登录认证失败"
   login_name: 登录
   logout: 退出

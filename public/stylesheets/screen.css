@@ -281,6 +281,7 @@ a { outline: none; }
     width: 750px;
     margin-right: auto;
     margin-left: auto;
+
     min-height: 270px;
     height:auto;
     border-top-width: medium;
@@ -296,6 +297,9 @@ a { outline: none; }
     margin-top: 10px;
 
 }
+
+#wrapper h1{ padding-top:10px;padding-left:10px;  }
+#wrapper form{ padding:10px; }
 body.two-col #wrapper { }
 .container {
   width: 750px;
@@ -1058,7 +1062,7 @@ table#cart h4 { margin-bottom: 0em; }
   padding-top:20px;
   width: 470px;
 }
-#signup #new-customer h2 { margin-bottom: 0.25em; }
+#signup #new-customer h2 { margin-bottom: 0.8em; }
 #signup #new-customer p { margin-bottom: 10px; }
 #signup #new-customer p input.title {
   padding: 3px;
@@ -1071,7 +1075,7 @@ table#cart h4 { margin-bottom: 0em; }
   padding-top:20px;
   width: 470px;
 }
-#login #existing-customer h2 { margin-bottom: 0.25em; }
+#login #existing-customer h2 { margin-bottom: 1em; }
 #login #existing-customer p { margin-bottom: 10px; }
 #login #existing-customer p input.title {
   padding: 3px;

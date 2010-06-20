@@ -17,14 +17,14 @@
       </p>
     </div>
   <% end %>
-  <p>
+  <p> <label><%= submit_tag t("log_in"), :class => 'button primary'%> </label>
     <label>
       <%= check_box :user_session, :remember_me %>
       <%= label :user_session, :remember_me, t('remember_me') %>
       </label>
     </p>
 
-  <p><%= submit_tag t("log_in"), :class => 'button primary'%></p>
+  <p></p>
 
 <% end %>
 
