@@ -22,6 +22,7 @@
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
+
     height: 30px;
     padding-left: 10px;
     float:right;
@@ -74,14 +75,15 @@
     font-weight: bold;
     line-height: 13px;
     padding-top: 2px;
+    padding-bottom:5px;
 }
 
-#header .top_menu .second_menu{width:auto;padding:0;margin:0;}
+#header .top_menu .second_menu{width:auto;margin:0;}
 #header .top_menu .third_menu{width:auto;padding:0;margin:0;}
-#header .top_menu .second_menu ul{margin-left:120px;margin-top:40px;margin-right:5px;font-size:11px;padding-bottom:5px;border-bottom: 1px dotted;}
+#header .top_menu .second_menu ul{height:20px;margin-left:120px;margin-top:10px;margin-right:5px;padding-bottom:5px;font-size:11px;}
 #header .top_menu .second_menu ul li{display:inline;padding-left:5px;padding-right:5px;border-right:1px dotted;}
 
-#header .top_menu .third_menu ul{margin-left:120px;margin-top:0px;padding-bottom:5px;font-size:11px}
+#header .top_menu .third_menu ul{height:20px;margin-left:120px;margin-top:0px;padding-top:0px;padding-bottom:5px;font-size:11px;border-top: 1px dotted;}
 #header .top_menu .third_menu ul li{display:inline;padding-left:5px;padding-right:5px;border-right:1px dotted;}
 
 #login-bar{float:right;margin-right:5px;margin-botttom:5px;}
