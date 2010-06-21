@@ -1,4 +1,5 @@
-<div class="top_menu">
+<div id="top_menu">
+  <div id="first_menu">
 <div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
 <div class="wzys"><%= link_to "桑榇布艺About",products_url %></div>
 <div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
@@ -11,8 +12,8 @@
 <div class="wzys"><%= link_to "心情涂鸦Story",products_url %></div>
 <div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
 <div class="wzys"><%= link_to "联系我们contact",products_url %></div>
-
-<div class="second_menu">
+</div>
+<div id="second_menu">
 
   <ul>
     <% @root_taxons.each do |taxon| %>
@@ -21,7 +22,7 @@
   </ul>
 </div>
 
-<div class="third_menu">
+<div id="third_menu">
    <% if @taxon %>
 
 <ul>
@@ -31,5 +32,8 @@
     <% end %>
   </ul>
     <% end %>
+</div>
+
+
 </div>
 

@@ -18,11 +18,8 @@ end
   <div id="header" class="container">
     <div id="logo"><%= logo %></div>
     <%= render 'shared/top_menu' %>
-
-  </div>
-  <div class="clear"></div>
-
-  <div id="login-bar">
+     <div class="clear"></div>
+     <div id="login-bar" class="container">
     <%=  image_tag "Cart.gif" %><span><%= link_to t("cart"),cart_path %></span> |
     <% if current_user -%>
   <span><%= link_to t('my_account'), user_path(current_user) %></span><%= image_tag "dot01.gif" %>
@@ -31,6 +28,11 @@ end
 <span><%= link_to t('log_in'), login_path %> | </span>
 <span><%= link_to t('signup'), signup_path %></span>
 <% end -%></div>
+     <div style="clear:right;"></div>
+  </div>
+
+
+
 <div class="clear"></div>
 
     <div id="wrapper" class="container">
