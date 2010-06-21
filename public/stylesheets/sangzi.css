@@ -68,7 +68,7 @@
 #first_menu .wzys {
     float: left;
     height: 30px;
-    width: 60px;
+    width: 65px;
     font-family: "宋体";
     font-size: 13px;
     font-style: normal;
@@ -80,7 +80,7 @@
 
 #second_menu{width:auto;margin:0;}
 #third_menu{width:auto;padding:0;margin:0;}
-#second_menu ul{height:20px;margin-left:120px;margin-top:10px;margin-right:5px;padding-bottom:5px;font-size:11px;}
+#second_menu ul{position:relative;height:20px;margin-left:120px;margin-top:10px;margin-right:5px;padding-bottom:5px;font-size:11px;}
 #second_menu ul li{display:inline;padding-left:5px;padding-right:5px;border-right:1px dotted;}
 
 #third_menu ul{height:20px;margin-left:120px;margin-top:0px;padding-top:0px;padding-bottom:5px;font-size:11px;border-top: 1px dotted;}
