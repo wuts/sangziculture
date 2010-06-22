@@ -1,39 +1,33 @@
 <div id="top_menu">
-  <div id="first_menu">
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="wzys"><%= link_to "桑榇布艺About",products_url %></div>
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="wzys"><%= link_to "产品展示Products",products_url %></div>
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="hzgy"><%= link_to "合作共赢Win/Win",products_url %></div>
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="wzys"><%= link_to "乐淘淘Taobao",products_url %></div>
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="wzys"><%= link_to "心情涂鸦Story",products_url %></div>
-<div class="ljwz"><%= image_tag "sangzi/tb.gif",:width=>22,:height=>25 %></div>
-<div class="wzys"><%= link_to "联系我们contact",products_url %></div>
-</div>
-<div id="second_menu">
-
+  <div id="site_menu">
+  <ul>
+    <li class="current"><%= link_to "桑榇布艺About",products_url %></li>
+    <li class="ff"><%= link_to "<span>产品展示Products</span>",products_url %></li>
+    <li><%= link_to "合作共赢Win/Win",products_url %></li>
+    <li><%= link_to "乐淘淘Taobao",products_url %></li>
+    <li><%= link_to "心情涂鸦Story",products_url %></li>
+    <li><%= link_to "联系我们contact",products_url %></li>
+  </ul>
+  <div class="clear"></div>
+  </div>
+  <div id="category_menu">
   <ul>
     <% @root_taxons.each do |taxon| %>
-    <li><%= link_to taxon.name,seo_url(taxon) %>    </li>
+    <li><%= link_to taxon.name,seo_url(taxon) %></li>
     <% end %>
   </ul>
-</div>
-
-<div id="third_menu">
+  </div>
+   <div id="subcategory_menu">
    <% if @taxon %>
 
-<ul>
+    <ul>
     <% @taxon.children.each do |child_taxon| %>
 
       <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
     <% end %>
   </ul>
     <% end %>
+    </div>
 </div>
 
-
-</div>
 
