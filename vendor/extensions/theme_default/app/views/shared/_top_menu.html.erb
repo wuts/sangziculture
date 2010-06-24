@@ -19,7 +19,7 @@
   </div>
    <div id="subcategory_menu">
 
-    <% if @taxon.children.empty? %>
+    <% if @taxon.children.empty? && !@taxon.root? %>
 
     <ul>
     <% @taxon.parent.children.each do |child_taxon| %>
