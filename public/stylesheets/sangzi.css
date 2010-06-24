@@ -42,8 +42,8 @@
 #site_menu ul li{float:left;word-wrap:break-word;padding-top:auto;padding-bottom:auto;padding-left:25px;padding-right:10px;background:url(../images/sangzi/tb.gif) center left no-repeat;}
 #site_menu ul li a{display:block;width:60px;}
 
-#category_menu ul{height:15px;margin:5px 0 0 100px;padding-top:5px;padding-bottom:5px;width:580px;list-style:none;border-bottom:1px dotted;}
+#category_menu ul{height:15px;margin:5px 0 0 100px;padding-top:5px;padding-bottom:5px;width:480px;list-style:none;border-bottom:1px dotted;}
 #category_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;padding-right:5px;padding-left:5px;border-right:1px dotted;font: 1em bold;}
 
-#subcategory_menu ul{height:15px;margin:0 0 0 100px;padding-top:5px;padding-bottom:5px;width:580px;list-style:none}
+#subcategory_menu ul{height:15px;margin:0 0 0 100px;padding-top:5px;padding-bottom:5px;width:480px;list-style:none}
 #subcategory_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;line-height:20px;padding-right:5px;padding-left:5px;border-right:1px dotted;}
