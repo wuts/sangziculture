@@ -9,7 +9,7 @@
 }
 #top_menu a:link {
     font-family: "宋体";
-    font-size: 14px;
+    font-size: 1em;
     font-style: normal;
     font-weight: bold;
     text-decoration: none;
@@ -18,7 +18,7 @@
 #top_menu a:visited {
     text-decoration: none;
     font-family: "宋体";
-    font-size: 12px;
+    font-size: 1em;
     font-style: normal;
     font-weight: bold;
     color: #6C327F;
@@ -26,14 +26,14 @@
 #top_menu a:hover {
     color: #DFE2F1;
     font-family: "宋体";
-    font-size: 13px;
+    font-size: 1em;
     font-style: normal;
     font-weight: bold;
 }
 #top_menu a:active {
     text-decoration: none;
     font-family: "宋体";
-    font-size: 14px;
+    font-size: 1em;
     font-style: normal;
     font-weight: bold;
     color: #E1E3F2;
@@ -43,7 +43,7 @@
 #site_menu ul li a{display:block;width:60px;}
 
 #category_menu ul{height:15px;margin:5px 0 0 100px;padding-top:5px;padding-bottom:5px;width:580px;list-style:none;border-bottom:1px dotted;}
-#category_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;padding-right:5px;padding-left:5px;border-right:1px dotted;}
+#category_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;padding-right:5px;padding-left:5px;border-right:1px dotted;font: 1em bold;}
 
 #subcategory_menu ul{height:15px;margin:0 0 0 100px;padding-top:5px;padding-bottom:5px;width:580px;list-style:none}
-#subcategory_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;padding-right:5px;padding-left:5px;border-right:1px dotted;}
+#subcategory_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;line-height:20px;padding-right:5px;padding-left:5px;border-right:1px dotted;}
