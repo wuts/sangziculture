@@ -1,5 +1,5 @@
 
-<% if !params[:keywords].blank? %>
+<% if @taxon || !params[:keywords].blank? %>
   <% hook :taxon_products do %>
     <%= render :partial => "shared/products", :locals => {:products => @products, :taxon => @taxon } %>
   <% end %>
