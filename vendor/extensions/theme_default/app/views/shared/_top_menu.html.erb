@@ -36,7 +36,14 @@
       <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
     <% end %>
     </ul>
-    <% end %>
+      <% end %>
+  <% else %>
+      <ul>
+         <% @root_taxons.first.children.each do |child_taxon| %>
+
+         <li><%= link_to child_taxon.name,seo_url(child_taxon) %></li>
+       <% end %>
+      </ul>
 
   <% end %>
     </div>
