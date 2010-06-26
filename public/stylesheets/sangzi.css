@@ -48,3 +48,6 @@
 #subcategory_menu ul{height:15px;margin:0 0 0 100px;padding-top:5px;padding-bottom:5px;width:480px;list-style:none}
 #subcategory_menu ul li{display:inline;padding-top:auto;padding-bottom:auto;line-height:20px;padding-right:5px;padding-left:5px;border-right:1px dotted;}
 
+.content{margin:10px;padding-top:4px;}
+.content h2{color:purple;}
+.content p{text-indent:14px;line-height:20px;font-size:1em;}

@@ -122,7 +122,9 @@ ActionController::Routing::Routes.draw do |map|
   map.products 'products',:controller => "products", :action => "index"
   map.about '/about',:controller=>'pages',:action=>'about'
 
-
+  map.corporation '/corporation',:controller=>'pages',:action=>'corporation'
+  map.contact '/contact',:controller=>'pages',:action=>'contact'
+  map.taotao '/taotao',:controller=>'pages',:action=>'taotao'
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action/:id'
 

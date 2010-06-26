@@ -14,4 +14,11 @@ class PagesController < Spree::BaseController
     render :layout=>false
   end
 
+  def contact
+
+  end
+
+  def taotao
+  end
+
 end
