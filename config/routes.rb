@@ -38,6 +38,8 @@ ActionController::Routing::Routes.draw do |map|
   map.admin '/admin', :controller => 'admin/overview', :action => 'index'
   map.set_locale '/locale/set', :controller => 'locale', :action => 'set', :method => :get
 
+
+
   map.resources :tax_categories
   map.resources :countries, :has_many => :states, :only => :index
   map.resources :states, :only => :index
@@ -113,6 +115,10 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :trackers
     admin.resources :payment_methods
   end
+
+
+  map.home '/home',:controller=>'pages',:action=>'index'
+  map.about '/about',:controller=>'pages',:action=>'about'
 
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action/:id'

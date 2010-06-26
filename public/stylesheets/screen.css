@@ -799,7 +799,7 @@ p button img { margin: 0 5px 0 0; }
   border: 1px solid #dddddd;
   position: relative;
 }
-.product-listing li img{height:220px;max-width:230px;}
+.product-listing li img{height:210px;max-width:220px;}
 
 .product-listing li a {
   display: block;

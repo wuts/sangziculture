@@ -7,7 +7,6 @@ class ProductsController < Spree::BaseController
   before_filter :load_data, :only => :show
 
 
-
   resource_controller
   helper :taxons
   actions :show, :index
