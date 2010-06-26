@@ -557,6 +557,9 @@ ul#nav-bar li.cart-indicator a.full { background-image: url(../images/cart-full_
   overflow: hidden;
   display: inline-block;
 }
+
+.hidden{display:none;}
+
 .clearfix { display: block; }
 .nowrap { white-space: nowrap; }
 .no-bullets { list-style: none; }

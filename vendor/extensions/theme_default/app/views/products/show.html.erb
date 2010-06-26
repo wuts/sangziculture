@@ -21,11 +21,7 @@
   <% hook :product_description do %>
     <%= product_description(@product) rescue t("product_has_no_description") %>
     <% end %>
-     <% hook :cart_form do %>
-      <div id="cart-form">
-       <%= render 'cart_form' %>
-      </div>
-     <% end %>
+
 
 </div>
 
