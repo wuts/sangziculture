@@ -11,7 +11,7 @@ class PagesController < Spree::BaseController
   end
 
   def closed
-
+    render :layout=>false
   end
 
 end
