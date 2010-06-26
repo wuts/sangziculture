@@ -1,15 +1,17 @@
 class PagesController < Spree::BaseController
 
- layout nil,:only=>'index'
-
   def index
-
+    render :layout=>false
   end
 
   def about
   end
 
   def corporation
+  end
+
+  def closed
+
   end
 
 end

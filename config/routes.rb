@@ -118,7 +118,8 @@ ActionController::Routing::Routes.draw do |map|
   end
 
 
-  map.products 'index1.html',:controller => "products", :action => "index"
+  map.closed 'index1.html',:controller=>'pages',:action=>'closed'
+  map.products 'products',:controller => "products", :action => "index"
   map.about '/about',:controller=>'pages',:action=>'about'
 
 

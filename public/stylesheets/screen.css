@@ -803,6 +803,7 @@ p button img { margin: 0 5px 0 0; }
   padding: 5px;
   border: 1px solid #dddddd;
   position: relative;
+  overflow:hidden;
 }
 .product-listing li img{height:210px;max-width:220px;}
 
@@ -848,7 +849,7 @@ ul.thumbnails li img {
   right: 0;
   margin: auto;
 }
-ul.thumbnails li:hover { border-color: #cccccc; }
+ul.thumbnails li:hover { border-color: #B898C1; }
 ul.thumbnails li.selected { border-color: #999999; }
 .no_margin_or_padding {
   margin: 0;
