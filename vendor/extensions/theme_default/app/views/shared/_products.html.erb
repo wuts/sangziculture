@@ -1,7 +1,9 @@
+
 <%
   paginated_products = Spree::Config.searcher.products if params.key?(:keywords)
   paginated_products ||= products
-%>
+ %>
+
 <% if products.empty? %>
  <div class="hint"> <%= t(:no_products_found) %></div>
 <% elsif params.key?(:keywords) %>
@@ -9,7 +11,8 @@
 <% end %>
 
 <% if products.any? %>
-  <div id="product-index" class="container">
+<div id="product-index" class="container">
+  <div id="left_btn"><%= link_to image_tag("sangzi/left.gif"),"#" %></div>
 <ul class="product-listing">
   <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
@@ -20,6 +23,7 @@
     <% end %>
   <% end %>
 </ul>
+<div id="right_btn"><%= link_to image_tag("sangzi/right.gif"),"#" %></div>
  </div>
 <% end %>
 
@@ -47,6 +51,8 @@
 <%= will_paginate(paginated_products,
                     :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
 %>
+
+
 </div>
 <% end -%>
 

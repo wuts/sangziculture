@@ -789,6 +789,7 @@ p button img { margin: 0 5px 0 0; }
     margin-left:auto;
     margin-right:auto;
     padding: 0px;
+
 }
 
 .product-listing li {
@@ -927,6 +928,7 @@ ul.thumbnails li.selected { border-color: #999999; }
 #product-index {
    text-align:center;
    background-image: url(../images/sangzi/nrbj.jpg);
+
 }
 
 #product-description {

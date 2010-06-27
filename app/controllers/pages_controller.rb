@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class PagesController < Spree::BaseController
 
   def index
@@ -19,6 +20,14 @@ class PagesController < Spree::BaseController
   end
 
   def taotao
+  end
+
+  def accession_policy
+     send_file "#{RAILS_ROOT}/public/downloads/桑梓布艺产品加盟政策.pdf",:type=>"application/pdf"
+  end
+
+  def wholesale_policy
+    send_file "#{RAILS_ROOT}/public/downloads/桑梓布艺产品实体渠道政策.pdf",:type=>"application/pdf"
   end
 
 end
