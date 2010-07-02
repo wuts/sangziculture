@@ -264,10 +264,7 @@ legend {
   margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
-body {
-  margin-top: 10px;
-  background-color: #b898c1;
-}
+
 div.left {
   float: left;
   width: 49%;
@@ -353,7 +350,8 @@ body.two-col #content {
 }
 
 #logo{float:left;margin-left:0px;margin-top:5px;}
-#fyl{float:left;}
+#fyl{position:relative;margin-bottom:2px;margin-top:10px;}
+.fyl{float:left;}
 #pagination{width:750px;text-align:center;}
 .pagination{float:right;}
 
@@ -785,10 +783,13 @@ p button img { margin: 0 5px 0 0; }
   border-right: 1px solid #eeeeee;
 }
 .product-listing {
+
     list-style: none;
     margin-left:auto;
     margin-right:auto;
     padding: 0px;
+    width:650px;
+    overfolw:auto;
 
 }
 
@@ -796,8 +797,8 @@ p button img { margin: 0 5px 0 0; }
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  height: 215px;
-  width:220px;
+  height: 205px;
+
   text-align: center;
   float: left;
   margin: 5px;
@@ -897,13 +898,12 @@ ul.thumbnails li.selected { border-color: #999999; }
 #product-images {
   display: inline;
   float: left;
-  width: 270px;
+  width: 250px;
   margin-right: 10px;
 }
 
 #product-images #main-image {
   height:200px;
-
   position: relative;
 
 }
@@ -935,7 +935,7 @@ ul.thumbnails li.selected { border-color: #999999; }
 
   display: inline;
   float: left;
-  width: 430px;
+  width: 420px;
   margin-right: 10px;
   font-size:12px;
   line-height:20px;

@@ -52,5 +52,7 @@
 .content h2{color:purple;}
 .content p{text-indent:14px;line-height:20px;font-size:1em;}
 
-#left_btn{position:absolute;top:240px;left:290px;}
-#right_btn{position:absolute;top:240px;right:290px;}
+#left_btn a{display:block;text-align:left;position:relative;margin-top:100px;margin-left:2px;width:25px;float:left;}
+#left_btn a:hover{background:purple;}
+#right_btn a{display:block;text-align:left;position:relative;margin-top:100px;margin-right:2px;width:25px;float:right;}
+#right_btn a:hover{background:purple;}

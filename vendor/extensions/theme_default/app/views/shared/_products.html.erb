@@ -12,7 +12,7 @@
 
 <% if products.any? %>
 <div id="product-index" class="container">
-  <div id="left_btn"><%= link_to image_tag("sangzi/left.gif"),"#" %></div>
+ <div id="left_btn"><%= link_to image_tag("sangzi/left.gif"),"#" %></div>
 <ul class="product-listing">
   <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
