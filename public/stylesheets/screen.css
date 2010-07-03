@@ -355,7 +355,7 @@ body.two-col #content {
 #fyl{position:relative;margin-bottom:2px;margin-top:10px;}
 .fyl{float:left;}
 #pagination{width:750px;text-align:center;}
-.pagination{float:right;}
+.pagination{float:right;margin-right:10px;}
 
 #footer div.left { width: 37%; }
 #footer div.right {
