@@ -277,7 +277,7 @@ div.right {
 a { outline: none; }
 #wrapper {
     background-color:#E1E3F2;
-    width: 750px;
+    width: 700px;
     margin-right: auto;
     margin-left: auto;
 
@@ -783,7 +783,7 @@ p button img { margin: 0 5px 0 0; }
   margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
-#slider{}
+#slider{  background-image: url(../images/sangzi/nrbj.jpg);}
 #slider ul, #slider li{
     margin:0;
     padding:0;
@@ -801,7 +801,7 @@ p button img { margin: 0 5px 0 0; }
     /* // image replacement */
 
 #slider li{
-    width:650px;
+    width:700px;
     height:250px;
     overflow:hidden;
     padding:10px;
@@ -820,11 +820,11 @@ p button img { margin: 0 5px 0 0; }
     top:260px;
     }
 #nextBtn{
-   left:265px;
+   left:300px;
 }
 
 #prevBtn{
-     left:1054px;
+     left:1022px;
 }
 #prevBtn a, #nextBtn a{
     display:block;
