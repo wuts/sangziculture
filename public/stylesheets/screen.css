@@ -970,6 +970,7 @@ ul.thumbnails li.selected { border-color: #999999; }
   float: left;
   width: 250px;
   margin-right: 10px;
+  border-right:1px dotted;
 }
 
 #product-images #main-image {
@@ -1011,7 +1012,7 @@ ul.thumbnails li.selected { border-color: #999999; }
   line-height:20px;
   margin-top:10px;
   padding-left:10px;
-  border-left:1px dotted;
+
   height:auto;
 
 }
