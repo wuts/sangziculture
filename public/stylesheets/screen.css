@@ -277,7 +277,7 @@ div.right {
 a { outline: none; }
 #wrapper {
     background-color:#E1E3F2;
-    width: 700px;
+    width: 750px;
     margin-right: auto;
     margin-left: auto;
 
@@ -294,6 +294,7 @@ a { outline: none; }
     border-bottom-color: #6c327f;
     border-left-color: #6c327f;
     margin-top: 10px;
+    position:relative;
 
 }
 
@@ -783,7 +784,8 @@ p button img { margin: 0 5px 0 0; }
   margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
-#slider{  background-image: url(../images/sangzi/nrbj.jpg);}
+/*#slider{  background-image: url(../images/sangzi/nrbj.jpg);}*/
+#slider{ background-image: url(../images/sangzi/main-bg.jpg);margin-top:20px;}
 #slider ul, #slider li{
     margin:0;
     padding:0;
@@ -801,30 +803,30 @@ p button img { margin: 0 5px 0 0; }
     /* // image replacement */
 
 #slider li{
-    width:700px;
+    width:710px;
     height:250px;
     overflow:hidden;
     padding:10px;
 
 }
 
-#slider ul li a{width:200px;}
-#slider ul li a img{vertical-align:bottom;}
+#slider ul li a{width:200px;margin-left:auto;margin-right:auto;}
+#slider ul li a img{vertical-align:middle;align:middle;}
 
 #prevBtn, #nextBtn{
     display:block;
     width:30px;
     height:50px;
     position:absolute;
-    left:-30px;
-    top:260px;
+    left:0px;
+    top:100px;
     }
 #nextBtn{
-   left:300px;
+   left:5px;
 }
 
 #prevBtn{
-     left:1022px;
+     left:725px;
 }
 #prevBtn a, #nextBtn a{
     display:block;

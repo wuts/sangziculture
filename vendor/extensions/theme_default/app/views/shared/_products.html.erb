@@ -12,10 +12,9 @@
 
 <% if products.any? %>
 <div id="slider" class="container">
-
+ <% if products.count>6 %>
 
  <ul>
-
   <li>
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
@@ -38,6 +37,36 @@
   <% end %>
   </li>
 </ul>
+ <% elsif  (3..6).include?(products.count) %>
+
+  <ul>
+  <li>
+     <% products[0..2].each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+        <%= link_to product_image(product), product %>
+    <% end %>
+  <% end %>
+  </li>
+  <li>
+     <% products[3..5].each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+        <%= link_to product_image(product), product %>
+    <% end %>
+  <% end %>
+  </li>
+  <ul>
+    <% else %>
+   <ul>
+  <li>
+     <% products.each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+        <%= link_to product_image(product), product %>
+    <% end %>
+  <% end %>
+  </li>
+  <li>
+    </ul>
+   <% end %>
 
  </div>
 <% end %>
@@ -51,18 +80,8 @@
    %>
 <div id="fyl" class="container">
 
-   <select id="select" class="fyl" size="1" name="select">
-     <% get_taxonomies.each do |taxonomy| %>
 
-     <option  <%=' class="current"'  if @taxon && @taxon == taxonomy.root %>><%= link_to t("shop_by_taxonomy", :taxonomy => taxonomy.name.singularize), seo_url(taxonomy.root), :class => 'root' %></option>
-      <% taxonomy.root.children.each do |taxon| %>
-
-     <option <%= ' class="current"'if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>> <%= link_to taxon.name, seo_url(taxon) %></option>
-
-       <% end %>
-       <% end %>
-    </select>
-    <input type="text" size="14" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
+    <input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
     <input type="submit" value="搜索/search" id="button" class="fyl" name="button">
 <%= will_paginate(paginated_products,
                     :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
