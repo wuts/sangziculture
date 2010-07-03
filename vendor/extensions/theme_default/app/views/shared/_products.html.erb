@@ -11,25 +11,41 @@
 <% end %>
 
 <% if products.any? %>
-<div id="product-index" class="container">
- <div id="left_btn"><%= link_to image_tag("sangzi/left.gif"),"#" %></div>
-<ul class="product-listing">
-  <% products.each do |product| %>
+<div id="slider" class="container">
+
+
+ <ul>
+
+  <li>
+     <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <li id="product_<%= product.id %>">
         <%= link_to product_image(product), product %>
-        <div>fsdfsd</div>
-      </li>
     <% end %>
   <% end %>
+  </li>
+   <li>
+     <% products[3..5].each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+        <%= link_to product_image(product), product %>
+    <% end %>
+  <% end %>
+  </li>
+<li>
+     <% products[6..8].each do |product| %>
+    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
+        <%= link_to product_image(product), product %>
+    <% end %>
+  <% end %>
+  </li>
 </ul>
-<div id="right_btn"><%= link_to image_tag("sangzi/right.gif"),"#" %></div>
+
  </div>
 <% end %>
 
 
+
 <% if paginated_products.respond_to?(:total_pages)
-      params.delete(:search)
+   params.delete(:search)
       params.delete(:taxon)
 
    %>
