@@ -976,6 +976,7 @@ ul.thumbnails li.selected { border-color: #999999; }
 #product-images #main-image {
   height:200px;
   position: relative;
+  overflow:hidden;
 
 }
 #product-images #thumbnails {
