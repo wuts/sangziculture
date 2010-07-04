@@ -18,7 +18,7 @@
   <li>
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-        <%= link_to product_image(product)+'&#8203;', product %>
+        <%= link_to "#{product_image(product)}&nbsp;", product %>
     <% end %>
   <% end %>
   </li>
