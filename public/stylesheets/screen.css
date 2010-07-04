@@ -785,7 +785,7 @@ p button img { margin: 0 5px 0 0; }
   border-right: 1px solid #eeeeee;
 }
 /*#slider{  background-image: url(../images/sangzi/nrbj.jpg);}*/
-#slider{ background-image: url(../images/sangzi/main-bg.jpg);margin-top:20px;}
+#slider{ margin-top:20px;}
 #slider ul, #slider li{
     margin:0;
     padding:0;
@@ -810,7 +810,8 @@ p button img { margin: 0 5px 0 0; }
 
 }
 
-#slider ul li a{width:200px;margin-left:auto;margin-right:auto;}
+#slider ul li a{width:250px;margin-left:auto;margin-right:auto;background-color:purple;}
+#slider ul li a:hover{border:1px dotted;}
 #slider ul li a img{vertical-align:middle;align:middle;}
 
 #prevBtn, #nextBtn{
