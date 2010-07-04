@@ -18,21 +18,21 @@
   <li>
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-        <%= link_to "#{product_image(product)}&nbsp;", product %>
+        <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
    <li>
      <% products[3..5].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <%= link_to product_image(product)+'&#8203;', product %>
+      <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
 <li>
      <% products[6..8].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-       <%= link_to product_image(product)+'&#8203;', product %>
+       <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
@@ -43,14 +43,14 @@
   <li>
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-       <%= link_to "#{product_image(product)}&#8203;", product %>
+       <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
   <li>
      <% products[3..5].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <%= link_to product_image(product)+'&#8203;', product %>
+      <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
@@ -60,7 +60,7 @@
   <li>
      <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-        <%= link_to product_image(product)+'&#8203;', product %>
+        <%= link_to product_image(product), product %>
     <% end %>
   <% end %>
   </li>
