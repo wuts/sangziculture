@@ -809,8 +809,8 @@ p button img { margin: 0 5px 0 0; }
     padding:10px;
 
 }
-
-#slider ul li a{display:block;width:250px;margin-left:auto;margin-right:auto;background-color:purple;}
+#slider ul li span{display:block;width:230px;height:250px;background-color:purple;}
+#slider ul li a{margin-left:auto;margin-right:auto}
 #slider ul li a:hover{border:1px dotted;}
 #slider ul li a img{vertical-align:middle;align:middle;}
 
