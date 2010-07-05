@@ -15,54 +15,66 @@
  <% if products.count>6 %>
 
  <ul>
-  <li>
+   <li>
+
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-        <%= link_to product_image(product), product %>
+       <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
    <li>
+
      <% products[3..5].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <%= link_to product_image(product), product %>
+     <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
-<li>
+   <li>
+
      <% products[6..8].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
        <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
 </ul>
  <% elsif  (3..6).include?(products.count) %>
 
   <ul>
-  <li>
+    <li>
+
      <% products[0..2].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
        <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
-  <li>
+    <li>
+
      <% products[3..5].each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
       <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
   <ul>
     <% else %>
    <ul>
-  <li>
+     <li>
+
      <% products.each do |product| %>
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
         <%= link_to product_image(product), product %>
     <% end %>
-  <% end %>
+    <% end %>
+
   </li>
   <li>
     </ul>

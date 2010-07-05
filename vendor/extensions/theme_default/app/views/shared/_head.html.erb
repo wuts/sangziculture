@@ -7,11 +7,25 @@
 <% end -%>
 <%= meta_data_tags %>
 <script type="text/javascript">
+(function ($){
+$.fn.vAlign = function(){
+    return this.each(function(i)(
+    var ah = $(this).height();
+    var ph = $(this).parent().height();
+    var mh = (ph - ah) / 2;
+    $(this).css('margin-top', mh);
+    );
+};
+})(jQuery);
+</script>
+<script type="text/javascript">
         $(document).ready(function(){
             $("#slider").easySlider({
                 auto: true,
                 continuous: true
             });
+            $("#slide img").vAlign();
+
         });
 </script>
 
