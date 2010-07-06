@@ -281,7 +281,7 @@ a { outline: none; }
     margin-right: auto;
     margin-left: auto;
 
-    min-height: 270px;
+    min-height: 230px;
     height:auto;
     border-top-width: medium;
     border-right-width: medium;
@@ -810,7 +810,7 @@ p button img { margin: 0 5px 0 0; }
 
 }
 
-#slider ul li a{text-align:center;margin:0 5px 0 5px;height:220px;display:block;width:200px;overflow:hidden;background-color:#b898c1;border:1px solid;float:left;}
+#slider ul li a{text-align:center;margin:0 5px 0 5px;height:200px;display:block;width:200px;overflow:hidden;background-color:#b898c1;border:1px solid;float:left;}
 #slider ul li a:hover{border:2px dotted;}
 
 #slider ul li  img{vertical-align:middle;height:200px;}
