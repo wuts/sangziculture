@@ -7,16 +7,55 @@
 <% end -%>
 <%= meta_data_tags %>
 <script type="text/javascript">
-(function ($){
-$.fn.vAlign = function(){
-    return this.each(function(i)(
-    var ah = $(this).height();
-    var ph = $(this).parent().height();
-    var mh = (ph - ah) / 2;
-    $(this).css('margin-top', mh);
-    );
-};
-})(jQuery);
+  jQuery.fn.LoadImage=function(scaling,width,height,valign){
+return this.each(function(){
+   var t=$(this);
+   var src=$(this).attr("src")
+   var img=new Image();
+   img.src=src;
+   var autoScaling=function(){
+    if(scaling){
+     if(img.width>0 && img.height>0){
+           if(img.width/img.height>=width/height){
+               if(img.width>width){
+                   t.width(width);
+                   t.height((img.height*width)/img.width);
+               }else{
+                   t.width(img.width);
+                   t.height(img.height);
+               }
+           }
+           else{
+               if(img.height>height){
+                   t.height(height);
+                   t.width((img.width*height)/img.height);
+               }else{
+                   t.width(img.width);
+                   t.height(img.height);
+               }
+           }
+       }
+    }
+   }
+   $(this).attr("src","");
+   var loadpic=$(this).attr("alt")
+   if(valign) var lineheight=t.parent().height();
+   var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
+   t.hide();
+   t.after(loading);
+   $(img).load(function(){
+    autoScaling();
+    loading.remove();
+    t.attr("src",this.src);
+    if(valign){
+    var martop=(t.parent().height()-t.height())/2+"px";
+    t.css('margin-top',martop);}
+    t.show();
+   });
+
+});
+}
+
 </script>
 <script type="text/javascript">
         $(document).ready(function(){
@@ -24,7 +63,10 @@ $.fn.vAlign = function(){
                 auto: true,
                 continuous: true
             });
-            $("#slide img").vAlign();
+        //auto zoom image to fit box
+        var pic_width=$("#slider img").width;
+        alert(pic_width);
+
 
         });
 </script>
