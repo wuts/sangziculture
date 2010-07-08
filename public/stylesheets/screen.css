@@ -972,9 +972,38 @@ ul.thumbnails li.selected { border-color: #999999; }
   float: left;
   width: 250px;
   margin-right: 10px;
-  border-right:1px dotted;
+
 }
 
+#left_col {
+  display: inline;
+  float: left;
+  width: 250px;
+  margin-right: 10px;
+}
+
+#right_col {
+
+  display: inline;
+  float: left;
+  width: 420px;
+  margin-right: 10px;
+  font-size:12px;
+  line-height:20px;
+  margin-top:10px;
+  padding-left:10px;
+  border-left:1px dotted;
+  height:auto;
+
+}
+#right_col h2 {
+    font-size:16px;
+    color:purple;
+}
+
+#right_col p {
+   text-indent:0px;
+}
 #product-images #main-image {
   height:200px;
   position: relative;

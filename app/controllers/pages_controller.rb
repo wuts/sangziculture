@@ -22,6 +22,9 @@ class PagesController < Spree::BaseController
   def taotao
   end
 
+  def blog
+  end
+
   def accession_policy
      send_file "#{RAILS_ROOT}/public/downloads/桑梓布艺产品加盟政策.pdf",:type=>"application/pdf"
   end

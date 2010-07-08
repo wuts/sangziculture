@@ -125,6 +125,7 @@ ActionController::Routing::Routes.draw do |map|
   map.corporation '/corporation',:controller=>'pages',:action=>'corporation'
   map.contact '/contact',:controller=>'pages',:action=>'contact'
   map.taotao '/taotao',:controller=>'pages',:action=>'taotao'
+  map.blog '/blog',:controller=>'pages',:action=>'blog'
   map.accession_policy "accession_policy",:controller=>'pages',:action=>'accession_policy'
   map.wholesale_policy "wholesale_policy",:controller=>'pages',:action=>'wholesale_policy'
 
