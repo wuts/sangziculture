@@ -80,26 +80,26 @@
     </ul>
    <% end %>
 
- </div>
-<% end %>
-
-
-
-<% if paginated_products.respond_to?(:total_pages)
-   params.delete(:search)
-      params.delete(:taxon)
-
-   %>
 <div id="fyl" class="container">
 
 
     <input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
-    <input type="submit" value="搜索/search" id="button" class="fyl" name="button">
+    <input type="submit" value="搜索/search" id="button" class="fyl" name="button"><% if paginated_products.respond_to?(:total_pages)
+   params.delete(:search)
+      params.delete(:taxon)
+
+   %>
 <%= will_paginate(paginated_products,
                     :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
 %>
 
-
-</div>
 <% end -%>
+</div>
+
+
+
+ </div>
+<% end %>
+
+
 
