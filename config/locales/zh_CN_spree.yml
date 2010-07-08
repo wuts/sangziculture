@@ -453,8 +453,8 @@ zh_CN:
   live: "Live"
   loading: Loading
   locale_changed: "Locale Changed"
-  log_in: "登录Login"
-  signup: "注册Register"
+  log_in: "登录"
+  signup: "注册"
   logged_in_as: "以身份登录"
   logged_in_succesfully: "登录成功"
   logged_out: "您已退出"
