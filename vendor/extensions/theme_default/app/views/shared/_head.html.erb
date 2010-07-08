@@ -40,12 +40,12 @@ return this.each(function(){
    $(this).attr("src",this.src);
    var loadpic=$(this).attr("alt")
    if(valign) var lineheight=t.parent().height();
-   var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
+   //var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
    //t.hide();
-   t.after(loading);
+   //t.after(loading);
    $(img).load(function(){
     autoScaling();
-    loading.remove();
+    //loading.remove();
     t.attr("src",this.src);
     if(valign){
     var martop=(t.parent().height()-t.height())/2+"px";
