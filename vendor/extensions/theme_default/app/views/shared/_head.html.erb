@@ -37,7 +37,7 @@ return this.each(function(){
        }
     }
    }
-   $(this).attr("src","");
+   $(this).attr("src",this.src);
    var loadpic=$(this).attr("alt")
    if(valign) var lineheight=t.parent().height();
    var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
