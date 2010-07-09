@@ -11,7 +11,7 @@
 
   <% unless @order.line_items.empty? -%>
   <div id="subtotal">
-    <h3><%= "#{t("subtotal")}: #{order_price(@order)}" %></h3>
+
     <div class="links">
       <%= link_to image_tag('/images/update.png') + t("update"), '#', :class => 'button checkout primary', :onclick => "$('form#updatecart').submit(); return false;" %>
       <%= link_to image_tag('/images/checkout.png') + t("checkout"), edit_order_checkout_url(@order), :class => 'button checkout primary' %>
