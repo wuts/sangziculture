@@ -806,16 +806,15 @@ p button img { margin: 0 5px 0 0; }
     width:710px;
     height:200px;
     overflow:hidden;
-    margin-left:auto;
-    margin-right:auto;
-    padding:0 5px 0 5px;
-    text-align:center;
+
+    padding:0 5px;
+
 }
 
-#slider ul li a{text-align:center;margin:0 10px 0 8px;height:200px;display:block;width:200px;overflow:hidden;background-color:#b898c1;border:1px solid;float:left;}
+#slider ul li a{text-align:center;margin:0 8px 0 8px;height:200px;display:block;width:200px;overflow:hidden;background-color:#b898c1;border:1px solid;float:left;}
 #slider ul li a:hover{border:2px dotted;}
 
-#slider ul li  img{vertical-align:middle;}
+#slider ul li  img{vertical-align:middle;height:200px;}
 
 #prevBtn, #nextBtn{
     display:block;
