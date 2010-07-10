@@ -43,7 +43,7 @@ return this.each(function(){
    //var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
    //t.hide();
    //t.after(loading);
-  // $(img).load(function(){
+   $(img).load(function(){
     autoScaling();
     //loading.remove();
     //t.attr("src",this.src);
@@ -51,7 +51,7 @@ return this.each(function(){
     var martop=(t.parent().height()-t.height())/2+"px";
     t.css('margin-top',martop);}
     t.show();
-  // });
+  );
 
 });
 }
