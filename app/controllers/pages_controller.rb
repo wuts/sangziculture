@@ -26,7 +26,7 @@ class PagesController < Spree::BaseController
   end
 
   def accession_policy
-     send_file "#{RAILS_ROOT}/public/downloads/桑梓布艺产品加盟政策.pdf",:type=>"application/pdf"
+     send_file "#{RAILS_ROOT}/public/downloads/joinus.pdf",:type=>"application/pdf"
   end
 
   def wholesale_policy
