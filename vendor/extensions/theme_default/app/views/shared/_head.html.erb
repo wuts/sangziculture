@@ -43,19 +43,16 @@ return this.each(function(){
    //var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
    //t.hide();
    //t.after(loading);
-  //$(img).load(function(){
+  $(img).load(function(){
     autoScaling();
     //loading.remove();
     //t.attr("src",this.src);
     if(valign){
     var martop=(t.parent().height()-t.height())/2+"px";
     t.css('margin-top',martop);
-    var marbottom=(t.parent().height()-t.height())/2+"px";
-    t.css('margin-top',marbottom);
-
   }
     t.show();
-  // });
+  });
 
 });
 }
@@ -67,12 +64,14 @@ return this.each(function(){
                 auto: false,
                 continuous: true
             });
-        //auto zoom image to fit box.
-        $("#slider ul li a img").LoadImage(true,200,200,true);
-
-
-
+       
         });
 </script>
+
+<script type="text/javascript">
+  //auto zoom image to fit box.
+  $("#slider ul li a img").LoadImage(true,200,200,true);
+</script>
+
 
 <%= yield :head %>
