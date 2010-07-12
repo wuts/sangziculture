@@ -49,7 +49,11 @@ return this.each(function(){
     //t.attr("src",this.src);
     if(valign){
     var martop=(t.parent().height()-t.height())/2+"px";
-    t.css('margin-top',martop);}
+    t.css('margin-top',martop);
+    var marbottom=(t.parent().height()-t.height())/2+"px";
+    t.css('margin-top',marbottom);
+
+  }
     t.show();
   // });
 
