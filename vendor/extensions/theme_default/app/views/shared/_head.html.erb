@@ -42,7 +42,9 @@ return this.each(function(){
    if(valign) var lineheight=t.parent().height();
    //var loading=$("<span style='font-size:12px; line-height:"+lineheight+"px;'>"+loadpic+"</span>");
    //t.hide();
-   //t.after(loading);
+  //t.after(loading);
+
+
   $(img).load(function(){
     autoScaling();
     //loading.remove();
@@ -59,7 +61,7 @@ return this.each(function(){
 
 </script>
 <script type="text/javascript">
-        $(document).ready(function(){
+        $(window).load(function(){
             $("#slider").easySlider({
                 auto: false,
                 continuous: true
@@ -70,7 +72,7 @@ return this.each(function(){
 </script>
 
 <script type="text/javascript">
- 
+
 </script>
 
 
