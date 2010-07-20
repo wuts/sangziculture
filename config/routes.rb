@@ -25,7 +25,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # map.connect '/locale/:new_locale', :controller => 'locale', :action => 'set_session_locale'
 
-  #map.root :controller => "products", :action => "index"
+ #map.root :controller => "products", :action => "index"
   map.root :controller=>'pages',:action=>'index'
 
   map.resource :user_session, :member => {:nav_bar => :get}
@@ -118,8 +118,9 @@ ActionController::Routing::Routes.draw do |map|
   end
 
 
-  map.closed 'index1.html',:controller=>'pages',:action=>'closed'
-  map.products 'products',:controller => "products", :action => "index"
+  #map.closed 'index1.html',:controller=>'pages',:action=>'closed'
+ 
+  map.products 'index1.html',:controller => "products", :action => "index"
   map.about '/about',:controller=>'pages',:action=>'about'
 
   map.corporation '/corporation',:controller=>'pages',:action=>'corporation'
