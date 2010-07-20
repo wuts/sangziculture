@@ -11,88 +11,37 @@
 <% end %>
 
 <% if products.any? %>
-<div id="slider" class="container">
- <% if products.count>6 %>
+ <div class="slider" id="slider-one">
 
- <ul>
-   <li>
-
-     <% products[0..2].each do |product| %>
+  <img class="scrollButtons left" src="images/sangzi/left.gif" />
+<div class="scroll" style="overflow: hidden;">
+  <div class="scrollContainer" style="width: 1620px; left: -647px;">
+    <% products.each do |product| %>
+     <div class="panel" style="float: left; position: relative;">
+          <div class="inside">
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
        <%= link_to product_image(product), product %>
-    <% end %>
-    <% end %>
-
-  </li>
-   <li>
-
-     <% products[3..5].each do |product| %>
-    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-     <%= link_to product_image(product), product %>
-    <% end %>
+       <% end %>
+         </div>
+        </div>
     <% end %>
 
-  </li>
-   <li>
 
-     <% products[6..8].each do |product| %>
-    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-       <%= link_to product_image(product), product %>
-    <% end %>
-    <% end %>
+      <div class="left-shadow"></div>
 
-  </li>
-</ul>
- <% elsif  (3..6).include?(products.count) %>
-
-  <ul>
-    <li>
-
-     <% products[0..2].each do |product| %>
-    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-       <%= link_to product_image(product), product %>
-    <% end %>
-    <% end %>
-
-  </li>
-    <li>
-
-     <% products[3..5].each do |product| %>
-    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-      <%= link_to product_image(product), product %>
-    <% end %>
-    <% end %>
-
-  </li>
-  <ul>
-    <% else %>
-   <ul>
-     <li>
-
-     <% products.each do |product| %>
-    <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
-        <%= link_to product_image(product), product %>
-    <% end %>
-    <% end %>
-
-  </li>
-  <li>
-    </ul>
-   <% end %>
+      <div class="right-shadow"></div>
+    </div>
 
 
+ <% end %>
 
-
-
- </div>
-<% end %>
-
+</div>
+<img class="scrollButtons right" src="images/sangzi/right.gif" />
 <div id="fyl" class="container">
-
 
     <div class="hidden"><input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
     <input type="submit" value="搜索/search" id="button" class="fyl" name="button"></div>
-	<% if paginated_products.respond_to?(:total_pages)
+    <% if paginated_products.respond_to?(:total_pages)
    params.delete(:search)
       params.delete(:taxon)
 
@@ -102,5 +51,6 @@
 %>
 
 <% end -%>
+</div>
 </div>
 

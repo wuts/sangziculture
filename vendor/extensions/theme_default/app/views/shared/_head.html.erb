@@ -1,11 +1,21 @@
 <title><%= title %></title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <%= stylesheet_tags %>
-<%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.min.js','easySlider1.7',:cache => 'jquery-core' %>
+<%= javascript_include_tag 'jquery-1.3.2.min', 'jquery.validate.min.js','jquery.movingboxes',:cache => 'jquery-core' %>
 <% unless I18n.locale.to_s[0..1] == 'en' -%>
   <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
 <% end -%>
 <%= meta_data_tags %>
+<script type="text/javascript">
+  $(function(){
+   $('.slider').movingBoxes({ startPanel: 3 });
+
+   // Example of how to move the panel from outside the plugin, only works on first on called.
+   // $('.slider').data('movingBoxes').currentPanel(1);  // 1 = move to first panel, blank = return current panel
+
+  })
+</script>
+
 <script type="text/javascript">
   jQuery.fn.LoadImage=function(scaling,width,height,valign){
 return this.each(function(){
@@ -49,9 +59,11 @@ return this.each(function(){
     autoScaling();
     //loading.remove();
     //t.attr("src",this.src);
-    if(valign){
+  if(valign){
+    var marleft=(t.parent().width()-t.width())/2+"px";
     var martop=(t.parent().height()-t.height())/2+"px";
     t.css('margin-top',martop);
+    t.css('margin-left',marleft);
   }
     t.show();
   });
@@ -62,12 +74,9 @@ return this.each(function(){
 </script>
 <script type="text/javascript">
         $(window).load(function(){
-            $("#slider").easySlider({
-                auto: false,
-                continuous: true
-            });
+
             //auto zoom image to fit box.
-            $("#slider ul li a img").LoadImage(true,200,200,true);
+            $(".inside a img").LoadImage(true,200,200,true);
        });
 </script>
 

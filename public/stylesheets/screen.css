@@ -1375,3 +1375,108 @@ div#checkout #checkout-summary {
   padding: 20px;
   width: 180px;
 }
+
+
+.slider {
+  width: 675px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.scroll {
+  overflow: hidden;
+  width: 675px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scrollContainer {
+  position: relative;
+}
+
+.scrollContainer div.panel {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.left-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  bottom: 0;
+  background: url(../images/leftshadow.png) repeat-y;
+}
+
+.right-shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  bottom: 0;
+  background: url(../images/rightshadow.png) repeat-y;
+}
+
+.inside {
+  background-color:#B898C1;
+  border: 1px solid;
+  overflow:hidden;
+  width:200px;
+  height:200px;
+
+}
+
+.inside a{
+     display:block;
+     width:200px;
+     height:200px;
+     font-size:175px
+     font-family:Arial;
+     margin:0 auto;
+     text-align:center;
+}
+
+.inside img {
+  display: block;
+
+
+  *vertical-align:auto;
+  vertical-align:middle;
+
+}
+
+.inside h2 {
+  font-weight: normal;
+  color: #111;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.inside p {
+  font-size: 11px;
+  color: #ccc;
+}
+
+
+
+.scrollButtons {
+  position: absolute;
+  top: 100px;
+  cursor: pointer;
+}
+
+.scrollButtons.left {
+
+  left:-30px;
+}
+
+.scrollButtons.right {
+
+    right:-30px;
+}
+
+.hide {
+  display: none;
+}
