@@ -1438,6 +1438,8 @@ div#checkout #checkout-summary {
      font-family:Arial;
      margin:0 auto;
      text-align:center;
+	 display: table-cell;
+     vertical-align:middle;
 }
 
 .inside img {
