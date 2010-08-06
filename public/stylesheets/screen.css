@@ -1426,6 +1426,7 @@ div#checkout #checkout-summary {
   width:200px;
   height:200px;
   text-align:center;
+  margin:0 auto;
 }
 
 .inside a{
