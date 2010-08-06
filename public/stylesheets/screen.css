@@ -1446,7 +1446,7 @@ div#checkout #checkout-summary {
 
 .inside img {
   display: block;
-
+   margin:0 auto;
   margin-top: expression((200-this.height)/2);
   *vertical-align:auto;
   vertical-align:middle;
