@@ -1433,7 +1433,8 @@ div#checkout #checkout-summary {
      display:block;
      width:200px;
      height:200px;
-	
+	 vertical-align:middle;
+	 
      font-size:175px;
      font-family:Arial;
      margin:0 auto;
