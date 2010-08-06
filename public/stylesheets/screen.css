@@ -1437,7 +1437,8 @@ div#checkout #checkout-summary {
 	 
      font-size:175px;
      font-family:Arial;
-     margin:0 auto;
+     margin-left:auto;
+	 margin-right:auto;
      text-align:center;
 	 display: table-cell;
     
