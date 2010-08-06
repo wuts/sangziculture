@@ -1425,8 +1425,7 @@ div#checkout #checkout-summary {
   overflow:hidden;
   width:200px;
   height:200px;
-  text-align:center;
-  margin:0 auto;
+ 
 }
 
 .inside a{
@@ -1439,7 +1438,7 @@ div#checkout #checkout-summary {
      font-family:Arial;
      margin:0 auto;
      text-align:center;
-	 display: table-cell;
+
     
 }
 
