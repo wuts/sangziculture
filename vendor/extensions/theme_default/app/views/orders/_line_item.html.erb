@@ -18,7 +18,11 @@
       <%= truncate(variant.product.description, :length => 100, :omission => "...") %>
     <% end %>
   </td>
-
+  <td>
+    <% hook :cart_item_price, locals do %>
+      <%=  product_price(line_item) %>
+    <% end %>
+  </td>
   <td>
     <% hook :cart_item_quantity, locals do %>
       <%= item_form.text_field :quantity, :size => 3 %>
