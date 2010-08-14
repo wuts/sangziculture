@@ -137,8 +137,8 @@ zh_CN:
         one: Cheque Payment
         other: Cheque Payments
       country:
-        one: Country
-        other: Countries
+        one: 国家
+        other: 国家
       creditcard:
         one: "Credit Card"
         other: "Credit Cards"
@@ -309,7 +309,7 @@ zh_CN:
   cost_price: "成本价"
   count: 数量
   count_of_reduced_by: "count of '{{name}}' reduced by {{count}}"
-  country: Country
+  country: 国家
   country_based: "Country Based"
   coupon: 优惠券
   coupon_code: 优惠券号码
@@ -600,6 +600,7 @@ zh_CN:
   proceed_as_guest: "No Thanks, Proceed as Guest"
   process: Process
   product: 产品
+  product_sn: "产品编号"
   product_details: "产品说明"
   product_group: Product Group
   product_group_invalid: Product Group has invalid scopes
@@ -764,7 +765,7 @@ zh_CN:
   sales_total_for_all_orders: "Sales total for all orders"
   sales_totals: "Sales Totals"
   sales_totals_description: "Sales Total For All Orders"
-  save_and_continue: Save and Continue
+  save_and_continue: 保存并继续
   save_preferences: Save Preferences
   scope: Scope
   scopes: Scopes
@@ -847,12 +848,12 @@ zh_CN:
   status: Status
   stop: 停止
   store: 商店
-  street_address: "Street Address"
-  street_address_2: "Street Address (cont'd)"
+  street_address: "地址"
+  street_address_2: "地址 (继续)"
   subtotal: 小计
   subtract: 减去
   system: System
-  tax: Tax
+  tax: 税
   tax_categories: "Tax Categories"
   tax_categories_setting_description: "Set up tax categories to identify which products should be taxable."
   tax_category: "Tax Category"

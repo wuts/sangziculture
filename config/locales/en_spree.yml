@@ -599,6 +599,7 @@ en:
   proceed_as_guest: "No Thanks, Proceed as Guest"
   process: Process
   product: Product
+  product_sn: "Product SN"
   product_details: "Product Details"
   product_group: Product Group
   product_group_invalid: Product Group has invalid scopes

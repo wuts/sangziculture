@@ -13,22 +13,25 @@
   </td>
   <td>
     <% hook :cart_item_description, locals do %>
-      <h4><%= link_to variant.product.name,  product_path(variant.product) %></h4>
+
+
+    <h4><%= link_to variant.product.name,  product_path(variant.product) %></h4>
+     <h5><%= "#{t('product_sn')}:#{variant.product.sku}" %></h5>
       <%= variant_options variant %>
       <%= truncate(variant.product.description, :length => 100, :omission => "...") %>
     <% end %>
   </td>
-  <td>
+  <td width="8%">
     <% hook :cart_item_price, locals do %>
       <%=  product_price(line_item) %>
     <% end %>
   </td>
+
   <td>
     <% hook :cart_item_quantity, locals do %>
       <%= item_form.text_field :quantity, :size => 3 %>
     <% end %>
   </td>
-
 
   <td>
     <% hook :cart_item_delete, locals do %>

@@ -17,7 +17,7 @@ div.inner input[type=text], div.inner select { width: 80%; }
       </p>
       <p id="baddress" class="field">
         <%= bill_form.label :address1, t(:street_address) %>
-        <%= bill_form.text_field :address1, :class => 'required' -%><span class="req">*</span>
+        <%= bill_form.text_area :address1,:rows=>4,:cols=>28, :class => 'required' -%><span class="req">*</span>
       </p>
       <p id="baddress2" class="field">
         <%= bill_form.label :address2, t(:street_address_2) %>
@@ -96,7 +96,7 @@ div.inner input[type=text], div.inner select { width: 80%; }
       </p>
       <p id="saddress" class="field">
         <%= ship_form.label :address1, t(:street_address) %>
-        <%= ship_form.text_field :address1, :class => 'required' -%><span class="req">*</span>
+        <%= ship_form.text_area :address1,:rows=>4,:cols=>28,:class => 'required' -%><span class="req">*</span>
       </p>
       <p id="saddress2" class="field">
         <%= ship_form.label :address2, t(:street_address_2) %>
