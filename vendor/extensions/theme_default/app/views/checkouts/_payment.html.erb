@@ -1,3 +1,4 @@
+
 <fieldset id="payment">
   <legend><%= t("payment_information") %></legend>
 
@@ -6,6 +7,7 @@
     <label>
       <%= radio_button_tag "checkout[payments_attributes][][payment_method_id]", method.id, method == @payment_method %>
       <%= t(method.name, :scope => :payment_methods, :default => method.name) %>
+        <%= method.description %>
     </label>
   </p>
   <% end %>
