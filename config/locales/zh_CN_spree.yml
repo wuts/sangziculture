@@ -408,7 +408,7 @@ zh_CN:
   google_analytics_new: "New Google Analytics Account"
   google_analytics_setting_description: "Manage Google Analytics ID"
   guest_checkout: 游客结账
-  guest_user_account: 游客登出
+  guest_user_account: 游客账号
   has_no_shipped_units: has no shipped units
   height: 高度
   hello_user: "新用户"
@@ -736,7 +736,7 @@ zh_CN:
   refund: 退款
   register: 注册为新用户
   register_or_guest: Checkout as Guest or Register
-  registration: Registration
+  registration: 注册
   remember_me: "记住"
   remove: 删除
   reports: 报告

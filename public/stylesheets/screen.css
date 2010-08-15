@@ -202,7 +202,7 @@ form p.field select {
   float: left;
   margin: 0 5px 7px 0;
 }
-form p.field.radios { line-height: 150%; }
+form p.field.radios { line-height: 150%;width:300px;}
 label { font-weight: bold; }
 div#checkout #checkout_form_address #billing label.error {
   color: red;
@@ -227,6 +227,7 @@ div#checkout #checkout_form_address #shipping label.error {
   width: auto;
 }
 fieldset { margin-bottom: 1em; }
+fieldset #payment{ width:310px; }
 legend {
   font-size: 150%;
   font-weight: bold;
@@ -314,6 +315,8 @@ body.two-col #wrapper { }
   overflow: hidden;
   display: block;
 }
+
+.container h2{margin-top:10px;}
 #sidebar {
   display: inline;
   float: left;
@@ -1493,3 +1496,5 @@ div#checkout #checkout-summary {
 .hide {
   display: none;
 }
+
+#order{margin:10px;}
