@@ -13,7 +13,7 @@
       <tr>
         <%- locals = {:item => item} -%>
         <% hook :order_details_line_item_row, locals do %>
-          <td width="300"><%=item.variant.product.name-%> <%= "(" + variant_options(item.variant) + ")" unless item.variant .option_values.empty? %></td>
+          <td width="300"><%="#{item.variant.product.name}/#{item.variant.product.sku}"-%> <%= "(" + variant_options(item.variant) + ")" unless item.variant .option_values.empty? %></td>
           <td class="price"><%= number_to_currency item.price -%></td>
           <td class="qty"><%=item.quantity-%></td>
           <td class="total"><span><%= number_to_currency (item.price * item.quantity)-%></span></td>
@@ -56,5 +56,17 @@
         <td class="total"><span id="order_total"><%= number_to_currency @order.total -%></span></td>
       </tr>
     </tbody>
-  <% end %>
+    <% end %>
+
+
+    <tbody id='payment_method'>
+      <tr class="payment">
+        <td colspan="3"><b><%= t('payment_method') %>:</b></td>
+        <td><p>
+户名：范刃<br />
+开户行：中国工商银行 牡丹灵通卡<br />
+账号：622 202 100 102 566 3201<br /></p></td>
+      </tr>
+    </tbody>
+
 </table>

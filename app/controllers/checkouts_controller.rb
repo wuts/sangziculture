@@ -99,7 +99,9 @@ class CheckoutsController < Spree::BaseController
   end
 
   def complete_checkout
+
     complete_order
+
     order_params = {:checkout_complete => true}
     session[:order_id] = nil
     flash[:commerce_tracking] = I18n.t("notice_messages.track_me_in_GA")
@@ -174,6 +176,7 @@ class CheckoutsController < Spree::BaseController
   end
 
   def complete_order
+
     if @checkout.order.out_of_stock_items.empty?
       flash[:notice] = t('order_processed_successfully')
     else

@@ -99,7 +99,7 @@ zh_CN:
       prototype:
         name: 名称
       return_authorization:
-        amount: 数量
+        amount: 总计
       role:
         name: 名称
       state:
