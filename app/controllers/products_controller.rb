@@ -34,12 +34,12 @@ class ProductsController < Spree::BaseController
                           :include => [:property])
     @selected_variant = @variants.detect { |v| v.available? }
 
-    referer = request.env['HTTP_REFERER']
+  #  referer = request.env['HTTP_REFERER']
 
-    if referer  && referer.match(HTTP_REFERER_REGEXP)
-      @taxon = Taxon.find_by_permalink($1)
-      return render :text=>@taxon.to_s
-    end
+    #if referer  && referer.match(HTTP_REFERER_REGEXP)
+    #  @taxon = Taxon.find_by_permalink($1)
+    #  return render :text=>@taxon.to_s
+   # end
   end
 
   def collection
