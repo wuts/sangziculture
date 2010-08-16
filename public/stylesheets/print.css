@@ -1,0 +1,35 @@
+.no_print{display:none;}
+#header,#footer{display:none;}
+body {
+  line-height: 1em;
+
+  background-color: #b898c1;
+
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 76%;
+  margin-top:20px;
+
+}
+#wrapper {
+    background-color:#E1E3F2;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+
+    min-height: 230px;
+    height:auto;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #6c327f;
+    border-right-color: #6c327f;
+    border-bottom-color: #6c327f;
+    border-left-color: #6c327f;
+    margin-top: 10px;
+    position:relative;
+
+}

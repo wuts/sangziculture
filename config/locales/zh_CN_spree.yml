@@ -557,6 +557,7 @@ zh_CN:
   order_total: "订单总计"
   order_total_message: "总计金额"
   order_updated: "订单更新"
+  print_order: "打印订单"
   orders: 订单
   other_payment_options: 其他付款方式
   out_of_stock: "缺货"

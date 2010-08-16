@@ -556,6 +556,7 @@ en:
   order_total: "Order Total"
   order_total_message: "The total amount charged to your card will be"
   order_updated: "Order Updated"
+  print_order: "Print Order"
   orders: Orders
   other_payment_options: Other Payment Options
   out_of_stock: "Out of Stock"

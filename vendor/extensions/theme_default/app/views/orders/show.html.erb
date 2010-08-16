@@ -1,16 +1,16 @@
 <div id="order">
-  <%= link_to t('back_to_store'), products_path %> 
+  <%= link_to t('back_to_store'), products_path %>
 
   <% if params.has_key? :checkout_complete %>
-  	<br/><br/>
-  	<h3><%= t('thank_you_for_your_order') %></h3>         
+    <br/><br/>
+    <h3><%= t('thank_you_for_your_order') %></h3>
   <% else %>
-  	| <%= link_to t('my_account'), user_path(current_user) if current_user%>
+    | <%= link_to t('my_account'), user_path(current_user) if current_user%>
   <% end %>
   <br/><br/>
 
   <%= render :partial => 'shared/order_details', :locals => {:order => @order} -%>
 
   <br/>
-  <%= link_to t('back_to_store'), products_path %>
+ <div><%= link_to t('back_to_store'), products_path,:style=>"float:left;" %> <span style="vertical-align:middle;"><%= link_to image_tag("printer.png")+t("print_order"), '#',:onclick=>'window.print();',:style=>"float:right;margin:0 5px 5px;" %></span></div>
 </div>

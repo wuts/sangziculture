@@ -3,7 +3,6 @@
   <div id="main-image">
     <%= render 'image' %>
 
-
   </div>
    <div id="thumbnails">
     <%= render 'thumbnails', :product => @product -%>
@@ -19,6 +18,7 @@
 
 <div id="product-description">
   <h2><%= @product.name %></h2>
+  <h5><%= "#{t('product_sn')}:#{@product.sku}" %></h5>
   <% hook :product_description do %>
     <%= product_description(@product) rescue t("product_has_no_description") %>
     <% end %>
