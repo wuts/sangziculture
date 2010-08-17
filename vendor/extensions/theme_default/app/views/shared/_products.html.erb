@@ -39,7 +39,8 @@
 <img class="scrollButtons right" src="/images/sangzi/right.gif" />
 <div id="fyl" class="container">
 
-    <div class="hidden"><input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
+
+    <div><input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
     <input type="submit" value="搜索/search" id="button" class="fyl" name="button"></div>
     <% if paginated_products.respond_to?(:total_pages)
    params.delete(:search)

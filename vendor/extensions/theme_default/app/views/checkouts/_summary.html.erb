@@ -27,6 +27,7 @@
     </tr>
   </tbody>
 </table>
+
 <% unless @prev_state.blank? %>
   <% form_for @checkout, :url => object_url, :html => { :id => 'checkout-summary-form'} do |summary_form| %>
     <label><%= t(:coupon_code) %></label>
