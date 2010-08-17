@@ -542,6 +542,7 @@ en:
   ord_qty: "Ord. Qty"
   ord_total: "Ord. Total"
   order: Order
+  order_id: Order ID
   order_confirmation_note: ""
   order_date: "Order Date"
   order_details: "Order Details"

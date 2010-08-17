@@ -543,6 +543,7 @@ zh_CN:
   ord_qty: "订单数量"
   ord_total: "订单总计"
   order: 订单
+  order_id: 订单编号
   order_confirmation_note: ""
   order_date: "/订单日期"
   order_details: "订单细节"
