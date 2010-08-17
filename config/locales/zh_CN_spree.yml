@@ -545,7 +545,7 @@ zh_CN:
   order: 订单
   order_id: 订单编号
   order_confirmation_note: ""
-  order_date: "/订单日期"
+  order_date: "订单日期"
   order_details: "订单细节"
   order_email_resent: "订单邮件重发"
   order_not_in_system: That order number is not valid on this site.
