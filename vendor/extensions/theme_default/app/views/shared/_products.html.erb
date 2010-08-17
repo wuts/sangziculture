@@ -7,7 +7,7 @@
 <% if products.empty? %>
  <div class="hint"> <%= t(:no_products_found) %></div>
 <% elsif params.key?(:keywords) %>
-  <h3><%= t(:search_results, :keywords => h(params[:keywords])) %></h3>
+  <h3 style="padding:5px;text-align:left;"><%= t(:search_results, :keywords => h(params[:keywords])) %>:</h3>
 <% end %>
 
 <% if products.any? %>
@@ -39,9 +39,12 @@
 <img class="scrollButtons right" src="/images/sangzi/right.gif" />
 <div id="fyl" class="container">
 
-
-    <div><input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="textfield" class="fyl" name="textfield">
-    <input type="submit" value="搜索/search" id="button" class="fyl" name="button"></div>
+  <div>
+    <form action="<%= products_url %>" method="get">
+    <input type="text" size="20" value="请输入产品编码" onclick="value='';focus()" id="keywords" class="fyl" name="keywords">
+    <input type="submit" value="搜索" id="button" class="fyl" name="button">
+    </form>
+  </div>
     <% if paginated_products.respond_to?(:total_pages)
    params.delete(:search)
       params.delete(:taxon)

@@ -772,7 +772,7 @@ zh_CN:
   scope: Scope
   scopes: Scopes
   search: 搜索
-  search_results: "Search results for '{{keywords}}'"
+  search_results: "对'{{keywords}}'的搜索结果"
   secure_connection_type: Secure Connection Type
   secure_creditcard: Secure Creditcard
   select: 选择
