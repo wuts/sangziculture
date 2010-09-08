@@ -50,7 +50,7 @@
       params.delete(:taxon)
 
    %>
-<%= will_paginate(paginated_products,
+<%= will_paginate(paginated_products,:order=>"rand()",
                     :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
 %>
 
