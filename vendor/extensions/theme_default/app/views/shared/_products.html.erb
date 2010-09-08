@@ -1,7 +1,7 @@
 
 <%
   paginated_products = Spree::Config.searcher.products if params.key?(:keywords)
-  paginated_products ||= products
+  paginated_products ||= products.shuffle!
  %>
 
 <% if products.empty? %>
@@ -50,7 +50,7 @@
       params.delete(:taxon)
 
    %>
-<%= will_paginate(paginated_products,:order=>"rand()",
+<%= will_paginate(paginated_products,
                     :previous_label => "&#171; #{t('previous')}",:next_label => "#{t('next')} &#187;")
 %>
 
